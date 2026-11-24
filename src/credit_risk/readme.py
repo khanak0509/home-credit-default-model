@@ -137,13 +137,13 @@ def pipeline_diagram(results: dict[str, Any]) -> str:
     return "\n".join([
         "```mermaid",
         "flowchart LR",
-        f"    raw[{tables} raw CSVs] --> sql[DuckDB SQL<br/>past rows only]",
-        f"    sql --> feat[{features} features<br/>one row per applicant]",
-        "    feat --> cv[5-fold CV<br/>Optuna tuning]",
-        "    cv --> models[logistic, scorecard,<br/>LightGBM, XGBoost]",
-        f"    models --> hold[holdout<br/>{holdout:,} applicants]",
-        "    hold --> out[reports and this README]",
-        "    models --> api[FastAPI scorer]",
+        f'    A["{tables} raw CSV tables"] --> B["DuckDB SQL on past rows"]',
+        f'    B --> C["{features} features per applicant"]',
+        '    C --> D["5 fold CV and Optuna"]',
+        '    D --> E["logistic and scorecard and boosting"]',
+        f'    E --> F["holdout of {holdout} applicants"]',
+        '    F --> G["reports and README"]',
+        '    E --> H["FastAPI scorer"]',
         "```",
     ])
 

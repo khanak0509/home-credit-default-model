@@ -15,13 +15,13 @@ Predicting which Home Credit applicants will have trouble repaying. 307,511 loan
 
 ```mermaid
 flowchart LR
-    raw[7 raw CSVs] --> sql[DuckDB SQL<br/>past rows only]
-    sql --> feat[287 features<br/>one row per applicant]
-    feat --> cv[5-fold CV<br/>Optuna tuning]
-    cv --> models[logistic, scorecard,<br/>LightGBM, XGBoost]
-    models --> hold[holdout<br/>61,503 applicants]
-    hold --> out[reports and this README]
-    models --> api[FastAPI scorer]
+    A["7 raw CSV tables"] --> B["DuckDB SQL on past rows"]
+    B --> C["287 features per applicant"]
+    C --> D["5 fold CV and Optuna"]
+    D --> E["logistic and scorecard and boosting"]
+    E --> F["holdout of 61503 applicants"]
+    F --> G["reports and README"]
+    E --> H["FastAPI scorer"]
 ```
 
 ## Results
