@@ -1,4 +1,5 @@
 seed: 42
+repo: khanak0509/home-credit-default-model
 
 paths:
   raw: data/raw

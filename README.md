@@ -1,10 +1,17 @@
-# home-credit-default-model
-
-[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml) ![python](https://img.shields.io/badge/python-3.11-3776ab) ![auc](https://img.shields.io/badge/holdout%20AUC-0.7946-2a78d6) ![duckdb](https://img.shields.io/badge/features-DuckDB%20SQL-fff000)
+<h1 align="center">home-credit-default-model</h1>
+<p align="center">
+  <a href="https://github.com/khanak0509/home-credit-default-model/actions/workflows/ci.yml"><img src="https://github.com/khanak0509/home-credit-default-model/actions/workflows/ci.yml/badge.svg" alt="ci"></a>
+  <img src="https://img.shields.io/badge/python-3.11-3776ab" alt="python">
+  <img src="https://img.shields.io/badge/holdout%20AUC-0.7946-2a78d6" alt="auc">
+  <img src="https://img.shields.io/badge/LightGBM%20%7C%20XGBoost-tuned%20with%20Optuna-6250d6" alt="models">
+  <img src="https://img.shields.io/badge/features-DuckDB%20SQL-f5c400" alt="duckdb">
+</p>
 
 Predicting which Home Credit applicants will have trouble repaying. 307,511 loans, 8.1% of them went bad, and all 7 tables from the Kaggle competition are used. Features are built in DuckDB SQL, only from records dated before each application, with tests that fail if anything from the future gets in.
 
-**Jump to:** [results](#results) · [what each table adds](#what-each-table-adds) · [what drives the score](#what-drives-the-score) · [calibration](#calibration) · [fairness](#fairness-and-drift) · [scoring](#scoring) · [running it](#running-it)
+| **0.7946** | **+0.0659** | **86.9%** | **287** |
+|:---:|:---:|:---:|:---:|
+| holdout AUC | AUC over the old model | approved at a 5% bad rate | features from 7 tables |
 
 ```mermaid
 flowchart LR

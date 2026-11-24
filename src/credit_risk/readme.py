@@ -110,6 +110,22 @@ def intro(results: dict[str, Any]) -> str:
     )
 
 
+def highlights(results: dict[str, Any]) -> str:
+    metrics = results["metrics"]
+    best = metrics["models"][metrics["best_tree_model"]]
+    middle = str(metrics["target_bad_rates"][len(metrics["target_bad_rates"]) // 2])
+    cells = [
+        (f"{best['metrics']['roc_auc']:.4f}", "holdout AUC"),
+        (signed(best["auc_diff_vs_legacy"]), "AUC over the old model"),
+        (percent(best["approval"][middle]["approval_rate"]), f"approved at a {percent(float(middle), 0)} bad rate"),
+        (f"{sum(results['build']['feature_counts'].values())}", f"features from {len(results['summary']['row_counts'])} tables"),
+    ]
+    header = "| " + " | ".join(f"**{value}**" for value, _ in cells) + " |"
+    divider = "|" + "|".join(":---:" for _ in cells) + "|"
+    labels = "| " + " | ".join(label for _, label in cells) + " |"
+    return "\n".join([header, divider, labels])
+
+
 def details(summary: str, body: str) -> str:
     return f"<details>\n<summary>{summary}</summary>\n\n{body}\n\n</details>"
 
@@ -139,17 +155,20 @@ def render(results: dict[str, Any]) -> str:
                      for r in fairness["gender"] + fairness["age_band"]]
     example_id = results["score_example"]["sk_id_curr"]
     best = metrics["models"][metrics["best_tree_model"]]
+    actions = f"https://github.com/{load_config()['repo']}/actions/workflows/ci.yml"
     sections = [
-        "# home-credit-default-model",
-        " ".join([
-            "[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)",
-            "![python](https://img.shields.io/badge/python-3.11-3776ab)",
-            f"![auc](https://img.shields.io/badge/holdout%20AUC-{best['metrics']['roc_auc']:.4f}-2a78d6)",
-            "![duckdb](https://img.shields.io/badge/features-DuckDB%20SQL-fff000)",
+        "\n".join([
+            '<h1 align="center">home-credit-default-model</h1>',
+            '<p align="center">',
+            f'  <a href="{actions}"><img src="{actions}/badge.svg" alt="ci"></a>',
+            '  <img src="https://img.shields.io/badge/python-3.11-3776ab" alt="python">',
+            f'  <img src="https://img.shields.io/badge/holdout%20AUC-{best["metrics"]["roc_auc"]:.4f}-2a78d6" alt="auc">',
+            '  <img src="https://img.shields.io/badge/LightGBM%20%7C%20XGBoost-tuned%20with%20Optuna-6250d6" alt="models">',
+            '  <img src="https://img.shields.io/badge/features-DuckDB%20SQL-f5c400" alt="duckdb">',
+            '</p>',
         ]),
         intro(results),
-        "**Jump to:** [results](#results) · [what each table adds](#what-each-table-adds) · [what drives the score](#what-drives-the-score) · "
-        "[calibration](#calibration) · [fairness](#fairness-and-drift) · [scoring](#scoring) · [running it](#running-it)",
+        highlights(results),
         pipeline_diagram(results),
         "## Results",
         f"On a {metrics['holdout_rows']:,} applicant holdout that was never used for tuning. AUC brackets are 95% bootstrap intervals.",
