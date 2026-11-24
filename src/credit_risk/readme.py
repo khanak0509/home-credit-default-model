@@ -47,172 +47,171 @@ def results_table(metrics: dict[str, Any]) -> str:
         m = metrics["models"][name]
         metric = m["metrics"]
         rows.append([
-            m["label"], f"{metric['roc_auc']:.4f} {ci(m['roc_auc_ci'])}", f"{metric['pr_auc']:.4f}",
-            f"{metric['ks']:.4f} {ci(m['ks_ci'])}", f"{metric['gini']:.4f} {ci(m['gini_ci'])}", f"{metric['brier']:.5f}",
-            "" if name == "legacy" else f"{signed(m['auc_diff_vs_legacy'])} {signed_ci(m['auc_diff_vs_legacy_ci'])}",
+            m["label"], f"{metric['roc_auc']:.4f} {ci(m['roc_auc_ci'])}", f"{metric['ks']:.4f}", f"{metric['gini']:.4f}",
+            f"{metric['pr_auc']:.4f}", f"{metric['brier']:.5f}", "" if name == "legacy" else signed(m["auc_diff_vs_legacy"]),
         ])
-    return markdown_table(["model", "ROC-AUC [95% CI]", "PR-AUC", "KS [95% CI]", "Gini [95% CI]", "Brier", "AUC vs legacy [95% CI]"], rows)
+    return markdown_table(["model", "AUC", "KS", "Gini", "PR-AUC", "Brier", "AUC gain vs old model"], rows)
 
 
 def approval_table(metrics: dict[str, Any]) -> str:
     rates = metrics["target_bad_rates"]
     rows = [[metrics["models"][name]["label"], *[percent(metrics["models"][name]["approval"][str(rate)]["approval_rate"]) for rate in rates]]
             for name in MODEL_ORDER]
-    return markdown_table(["model", *[f"approval at {percent(rate, 0)} bad rate" for rate in rates]], rows)
+    return markdown_table(["model", *[f"{percent(rate, 0)} bad rate" for rate in rates]], rows)
 
 
-def ablation_lines(ablation: dict[str, Any]) -> list[str]:
+def ablation_text(ablation: dict[str, Any]) -> str:
     steps = ablation["steps"]
     cumulative = [s for s in steps if s["kind"] == "cumulative"]
     external = next(s for s in steps if s["kind"] == "external")
     gains = sorted(cumulative[1:], key=lambda s: -s["delta_auc"])
-    lines = [f"Holdout AUC rises from {cumulative[0]['roc_auc']:.4f} (application only) to {cumulative[-1]['roc_auc']:.4f} (all {len(cumulative)} sources)."]
-    lines.append("Gain from adding each source, largest first: " + "; ".join(
-        f"{s['label'].lstrip('+ ')} {signed(s['delta_auc'])} {signed_ci(s['delta_auc_ci'])}" for s in gains) + ".")
-    lines.append(f"Removing the three external scores and their aggregates from the application set drops AUC from "
-                 f"{cumulative[0]['roc_auc']:.4f} to {external['roc_auc']:.4f}.")
-    return lines
+    best, worst = gains[0], gains[-1]
+    return (
+        f"The application table alone gets {cumulative[0]['roc_auc']:.4f}, all {len(cumulative)} tables get {cumulative[-1]['roc_auc']:.4f}. "
+        f"Biggest single jump is {best['label'].lstrip('+ ')} ({signed(best['delta_auc'])}), and {worst['label'].lstrip('+ ')} adds basically nothing "
+        f"({signed(worst['delta_auc'])}, interval {signed_ci(worst['delta_auc_ci'])}). "
+        f"The three external bureau scores carry a lot: drop them and the application-only model falls to {external['roc_auc']:.4f}. "
+        "Full numbers with intervals are in [reports/ablation.md](reports/ablation.md)."
+    )
 
 
-def key_findings(results: dict[str, Any]) -> list[str]:
+def notes(results: dict[str, Any]) -> list[str]:
     metrics, training, imbalance = results["metrics"], results["training"], results["imbalance"]
     models = metrics["models"]
     best = metrics["best_tree_model"]
     monotone = models["lightgbm_monotone"]["metrics"]["roc_auc"]
     unconstrained = models["lightgbm"]["metrics"]["roc_auc"]
     base, weighted = imbalance["variants"]["no_weighting"], imbalance["variants"]["scale_pos_weight"]
-    stability = results["explain"]["stability"]
     flagged = results["audit"]["flagged"]
-    scorecard_features = len(training["models"]["scorecard"]["selected_features"])
-    lines = [
-        f"- The best tree model by CV AUC is {models[best]['label']}. On the holdout it beats the legacy baseline by "
-        f"{signed(models[best]['auc_diff_vs_legacy'])} AUC {signed_ci(models[best]['auc_diff_vs_legacy_ci'])}.",
-        f"- The {scorecard_features}-feature WoE scorecard reaches {models['scorecard']['metrics']['roc_auc']:.4f} AUC with a fully transparent points table "
-        f"([reports/scorecard.csv](reports/scorecard.csv)).",
-        f"- Monotonic constraints cost {signed(unconstrained - monotone)} holdout AUC ({signed(training['monotone_cv_auc_cost'])} in CV) on {len(training['models']['lightgbm_monotone']['constraints'])} constrained features.",
-        f"- Class weighting changes out-of-fold AUC by {signed(weighted['roc_auc'] - base['roc_auc'])} but raises the Brier score from {base['brier']:.4f} to "
-        f"{weighted['brier']:.4f}; the mean predicted PD becomes {weighted['mean_predicted']:.3f} against an observed rate of {weighted['observed_rate']:.3f}.",
-        f"- SHAP importance is stable across CV folds: mean pairwise Spearman correlation {stability['mean_spearman']:.3f}, minimum {stability['min_spearman']:.3f}.",
-        f"- Leakage audit: {len(flagged)} of {len(results['audit']['features'])} features exceed the single-feature AUC review threshold of {results['audit']['threshold']}"
-        + (f" ({', '.join(flagged)})." if flagged else "."),
+    middle = str(metrics["target_bad_rates"][len(metrics["target_bad_rates"]) // 2])
+    approve_best = models[best]["approval"][middle]["approval_rate"]
+    approve_legacy = models["legacy"]["approval"][middle]["approval_rate"]
+    return [
+        f"- {models[best]['label']} beats the old logistic model by {signed(models[best]['auc_diff_vs_legacy'])} AUC "
+        f"{signed_ci(models[best]['auc_diff_vs_legacy_ci'])}. Holding the bad rate at {percent(float(middle), 0)}, "
+        f"that means approving {percent(approve_best)} of applicants instead of {percent(approve_legacy)}.",
+        f"- The scorecard is weaker ({models['scorecard']['metrics']['roc_auc']:.4f}) but every point is readable, see "
+        "[reports/scorecard.csv](reports/scorecard.csv).",
+        f"- Forcing monotonic behaviour on {len(training['models']['lightgbm_monotone']['constraints'])} features costs only "
+        f"{signed(unconstrained - monotone)} AUC, cheap for a model you have to defend.",
+        f"- Class weighting didn't help: AUC moved {signed(weighted['roc_auc'] - base['roc_auc'])} and Brier went from {base['brier']:.4f} to "
+        f"{weighted['brier']:.4f} (it predicts a {weighted['mean_predicted']:.0%} average default rate when the real one is {weighted['observed_rate']:.0%}).",
+        f"- No feature scores above {results['audit']['threshold']} AUC on its own, so nothing looked like a leak"
+        + (f" except {', '.join(flagged)}." if flagged else "."),
     ]
-    return lines
 
 
-def problem_statement(results: dict[str, Any]) -> str:
-    summary, build = results["summary"], results["build"]
-    future = sum(t["dropped_future_offset"] for t in build["leakage_filter"].values())
-    attached = build["leakage_filter"]["bureau_balance"]["dropped_parent_filtered"]
-    planned = build["leakage_filter"]["previous_application"]["masked_planned_dates"]
+def intro(results: dict[str, Any]) -> str:
+    summary = results["summary"]
     return (
-        f"The target is whether a Home Credit applicant has payment difficulties (TARGET = 1, a late payment on one of the first installments), "
-        f"which happens for {percent(summary['target_rate'])} of {summary['applications']:,} approved applications. "
-        f"Features come from all {len(summary['row_counts'])} tables: the application itself, credit bureau records and their monthly balances, previous Home Credit applications, "
-        "and the monthly POS, cash loan and credit card balances and installment repayments of earlier loans, aggregated in DuckDB SQL into one row per applicant. "
-        f"Leakage is prevented by aggregating only rows dated at or before the application ({future:,} future-dated rows and {attached:,} rows attached to them removed, "
-        f"{planned:,} previous applications with planned dates after the application masked, "
-        f"enforced by a test that fails if any feature query can see them), tuning only on 5-fold CV inside an 80% training split, and scoring once on an untouched 20% holdout."
+        f"Predicting which Home Credit applicants will have trouble repaying. {summary['applications']:,} loans, "
+        f"{percent(summary['target_rate'])} of them went bad, and all {len(summary['row_counts'])} tables from the Kaggle competition are used. "
+        "Features are built in DuckDB SQL, only from records dated before each application, with tests that fail if anything from the future gets in."
     )
+
+
+def details(summary: str, body: str) -> str:
+    return f"<details>\n<summary>{summary}</summary>\n\n{body}\n\n</details>"
+
+
+def pipeline_diagram(results: dict[str, Any]) -> str:
+    tables = len(results["summary"]["row_counts"])
+    features = sum(results["build"]["feature_counts"].values())
+    holdout = results["metrics"]["holdout_rows"]
+    return "\n".join([
+        "```mermaid",
+        "flowchart LR",
+        f"    raw[{tables} raw CSVs] --> sql[DuckDB SQL<br/>past rows only]",
+        f"    sql --> feat[{features} features<br/>one row per applicant]",
+        "    feat --> cv[5-fold CV<br/>Optuna tuning]",
+        "    cv --> models[logistic, scorecard,<br/>LightGBM, XGBoost]",
+        f"    models --> hold[holdout<br/>{holdout:,} applicants]",
+        "    hold --> out[reports and this README]",
+        "    models --> api[FastAPI scorer]",
+        "```",
+    ])
 
 
 def render(results: dict[str, Any]) -> str:
     metrics, ablation, fairness, psi = results["metrics"], results["ablation"], results["fairness"], results["psi"]
-    shap_model = results["explain"]["model"]
     score_psi = psi["rows"][0]["psi"]
-    fairness_rows = [[f"gender {r['group']}", f"{r['count']:,}", f"{r['observed_default_rate']:.4f}", f"{r['roc_auc']:.4f}", percent(r["approval_rate"])]
-                     for r in fairness["gender"]]
-    fairness_rows += [[f"age {r['group']}", f"{r['count']:,}", f"{r['observed_default_rate']:.4f}", f"{r['roc_auc']:.4f}", percent(r["approval_rate"])]
-                      for r in fairness["age_band"]]
+    fairness_rows = [[f"{r['group']}", f"{r['count']:,}", f"{r['observed_default_rate']:.3f}", f"{r['roc_auc']:.4f}", percent(r["approval_rate"])]
+                     for r in fairness["gender"] + fairness["age_band"]]
+    example_id = results["score_example"]["sk_id_curr"]
+    best = metrics["models"][metrics["best_tree_model"]]
     sections = [
         "# home-credit-default-model",
-        "[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)",
-        problem_statement(results),
-        f"## Results on the holdout ({metrics['holdout_rows']:,} applications)",
-        f"95% intervals from {metrics['n_bootstrap']} paired bootstrap resamples. Brier is after calibration.",
+        " ".join([
+            "[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)",
+            "![python](https://img.shields.io/badge/python-3.11-3776ab)",
+            f"![auc](https://img.shields.io/badge/holdout%20AUC-{best['metrics']['roc_auc']:.4f}-2a78d6)",
+            "![duckdb](https://img.shields.io/badge/features-DuckDB%20SQL-fff000)",
+        ]),
+        intro(results),
+        "**Jump to:** [results](#results) · [what each table adds](#what-each-table-adds) · [what drives the score](#what-drives-the-score) · "
+        "[calibration](#calibration) · [fairness](#fairness-and-drift) · [scoring](#scoring) · [running it](#running-it)",
+        pipeline_diagram(results),
+        "## Results",
+        f"On a {metrics['holdout_rows']:,} applicant holdout that was never used for tuning. AUC brackets are 95% bootstrap intervals.",
         results_table(metrics),
-        "\n".join(key_findings(results)),
-        "### What each data source adds",
-        f"{results['training']['models'][ablation['model']]['label']} retrained on cumulative feature groups.",
+        "\n".join(notes(results)),
+        details("Approval rate at a fixed bad rate", approval_table(metrics)),
+        "## What each table adds",
         "![feature group ablation](reports/figures/ablation.png)",
-        " ".join(ablation_lines(ablation)),
-        "### What drives the score",
-        f"SHAP values for {results['training']['models'][shap_model]['label']}, averaged over the 5 fold models.",
+        ablation_text(ablation),
+        "## What drives the score",
         "![shap summary](reports/figures/shap_summary.png)",
-        "### Calibration",
+        details("ROC, KS and cost curves", "\n\n".join([
+            "![roc](reports/figures/roc.png)", "![ks](reports/figures/ks.png)", "![cost](reports/figures/cost_curve.png)"])),
+        "## Calibration",
         "![calibration](reports/figures/calibration.png)",
-        "### Approval rate at a fixed bad rate",
-        approval_table(metrics),
-        "### Stability and fairness",
-        f"Score PSI between the training split and the holdout is {score_psi:.5f} (random split, so near zero is expected). "
-        f"Fairness audit at the single cut-off that gives a {percent(fairness['operating_bad_rate'], 0)} bad rate on the holdout; gender is not a model input.",
-        markdown_table(["group", "applicants", "observed default rate", "ROC-AUC", "approval rate"], fairness_rows),
-        "### Scoring an applicant",
+        "## Fairness and drift",
+        f"One cut-off, set so the approved book has a {percent(fairness['operating_bad_rate'], 0)} bad rate. "
+        "Gender is not a model input. Approval rates mostly follow each group's real default rate. "
+        f"Score PSI between train and holdout is {score_psi:.4f}, as expected for a random split.",
+        details("By gender and age", markdown_table(["group", "applicants", "default rate", "AUC", "approved"], fairness_rows)),
+        "## Scoring",
         "```bash\nmake score ID=<SK_ID_CURR>\n```",
-        "```json\n" + json.dumps(results["score_example"], indent=2) + "\n```",
-        "The same scorer runs as an HTTP service. `make serve` starts it locally; OpenAPI docs are at `/docs`.",
-        "\n".join([
+        details(f"Example output for applicant {example_id}", "```json\n" + json.dumps(results["score_example"], indent=2) + "\n```"),
+        details("As an API or in Docker", "\n".join([
             "```bash",
             "make serve",
-            f"curl localhost:8000/applicants/{results['score_example']['sk_id_curr']}/score",
+            f"curl localhost:8000/applicants/{example_id}/score",
             "curl -X POST localhost:8000/score -H 'content-type: application/json' -d '{\"sk_id_curr\": [100002, 100003]}'",
-            "```",
-        ]),
-        "Or in Docker, with the trained models and the feature store mounted:",
-        "\n".join([
-            "```bash",
+            "",
             "make docker",
             "docker run -p 8000:8000 -v $PWD/models:/app/models -v $PWD/data/processed:/app/data/processed credit-risk-lab",
             "```",
-        ]),
-        "## Reports",
+            "",
+            "Swagger docs at `localhost:8000/docs`.",
+        ])),
+        "## Running it",
         "\n".join([
-            "- [Data quality](reports/data_quality.md)",
-            "- [Feature build and leakage filter](reports/feature_build.md)",
-            "- [Leakage audit](reports/leakage_audit.md)",
-            "- [Model comparison](reports/model_comparison.md) with ROC, PR, KS, calibration and illustrative cost curves",
-            "- [Class imbalance study](reports/imbalance.md)",
-            "- [Feature group ablation](reports/ablation.md)",
-            "- [Explainability and PSI](reports/explainability.md)",
-            "- [Fairness audit](reports/fairness.md)",
-            "- [Scorecard table](reports/scorecard.csv)",
-            "- [Methodology](METHODOLOGY.md)",
-        ]),
-        "## Reproduce",
-        "\n".join([
-            "Needs Python 3.11, a Kaggle API token in `~/.kaggle/kaggle.json` and the competition rules accepted at "
-            "kaggle.com/competitions/home-credit-default-risk (the downloader falls back to a public mirror of the same files).",
+            "Python 3.11 and a Kaggle token in `~/.kaggle/kaggle.json`.",
             "",
             "```bash",
-            "make setup      # virtualenv and pinned dependencies",
-            "make all        # download, quality, features, audit, train, evaluate, ablation, explain, README",
-            "make test       # unit and integration tests",
-            "make quick      # the whole modeling pipeline with a small tuning budget, written to build/quick",
-            "make score ID=100002",
+            "make setup",
+            "make all",
+            "make test",
             "```",
             "",
-            "Individual stages: `make data`, `make quality`, `make features`, `make audit`, `make train`, `make evaluate`, `make ablation`, "
-            "`make explain`, `make readme`. `make test-unit` runs the tests that need no data, which is what CI runs on every push together with `ruff` and a Docker build. "
-            "The full run tunes 40 trials per library and takes hours on a laptop; `make quick` finishes in a fraction of that and never touches `reports/`. "
-            "All settings, including seeds, live in `config.yaml`.",
+            "`make all` goes from raw CSVs to this README. The full run tunes 40 trials per model and takes a few hours on a laptop, "
+            "`make quick` does the same with a tiny budget and writes to `build/quick` instead. Settings are in `config.yaml`.",
         ]),
-        "## Project layout",
+        details("More results", "\n".join([
+            "- [model comparison](reports/model_comparison.md)",
+            "- [data quality](reports/data_quality.md)",
+            "- [feature build](reports/feature_build.md) and [leakage audit](reports/leakage_audit.md)",
+            "- [class imbalance](reports/imbalance.md)",
+            "- [explainability and PSI](reports/explainability.md)",
+            "- [fairness](reports/fairness.md)",
+            "- [scorecard points](reports/scorecard.csv)",
+        ])),
+        "## Caveats",
         "\n".join([
-            "```",
-            "sql/                 cleaning views, leakage filter views, feature queries",
-            "src/credit_risk/     pipeline modules (one per make target), model code and the FastAPI service",
-            "tests/               unit tests and data-dependent integration tests",
-            "reports/             generated reports, figures and JSON results",
-            "config.yaml          every setting and assumption, plus the quick profile",
-            "Dockerfile           scoring service image",
-            ".github/workflows/   lint, unit tests and Docker build on every push",
-            "```",
-        ]),
-        "## Limitations",
-        "\n".join([
-            "- The dataset has no real timestamps, only offsets relative to each application, so validation is stratified CV plus a random holdout, not an out-of-time test. Performance on future vintages is likely to be lower.",
-            "- The cost curve and profit tables use illustrative margin and loss-given-default assumptions from `config.yaml`, not observed economics.",
-            "- No reject inference was done. The data only contains approved applicants, so the models are fit on the accepted population and may rank rejected-type applicants differently.",
-            "- All results come from one public dataset from one lender in one period.",
+            "- No real dates in the data, so this is a random holdout, not an out-of-time test. Expect it to do a bit worse on new loans.",
+            "- Only approved applicants are in the data, no reject inference.",
+            "- The cost curve uses made-up margin and loss numbers from `config.yaml`.",
         ]),
     ]
     return "\n\n".join(sections) + "\n"
