@@ -1,0 +1,13 @@
+{
+  "row_counts": {
+    "application_train": 307511,
+    "bureau": 1716428,
+    "bureau_balance": 27299925,
+    "installments_payments": 13605401,
+    "previous_application": 1670214,
+    "pos_cash_balance": 10001358,
+    "credit_card_balance": 3840312
+  },
+  "target_rate": 0.08072881945686496,
+  "applications": 307511
+}

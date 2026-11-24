@@ -1,0 +1,246 @@
+{
+  "model": "lightgbm",
+  "n_bootstrap": 1000,
+  "steps": [
+    {
+      "key": "application_no_external",
+      "label": "application without external scores",
+      "groups": [
+        "application"
+      ],
+      "drop": [
+        "EXT_SOURCE_1",
+        "EXT_SOURCE_2",
+        "EXT_SOURCE_3",
+        "EXT_SOURCE_MEAN",
+        "EXT_SOURCE_MIN",
+        "EXT_SOURCE_MAX",
+        "EXT_SOURCE_STD",
+        "EXT_SOURCE_PRODUCT"
+      ],
+      "kind": "external",
+      "n_features": 130,
+      "cv_auc_mean": 0.717406468079801,
+      "oof_auc": 0.7174059698822831,
+      "roc_auc": 0.7259736048266267,
+      "ks": 0.33230198142809925,
+      "roc_auc_ci": [
+        0.7187588037927218,
+        0.733743415678927
+      ],
+      "ks_ci": [
+        0.32167024361771535,
+        0.3485955622467842
+      ],
+      "external_delta_ci": [
+        0.040469240891467965,
+        0.05055897661352565
+      ]
+    },
+    {
+      "key": "application",
+      "label": "application",
+      "groups": [
+        "application"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 138,
+      "cv_auc_mean": 0.7671611640638571,
+      "oof_auc": 0.7671576343939387,
+      "roc_auc": 0.771631595564936,
+      "ks": 0.4080820866515572,
+      "roc_auc_ci": [
+        0.7641085078961131,
+        0.778583958155135
+      ],
+      "ks_ci": [
+        0.3954134810749928,
+        0.42204743662293687
+      ]
+    },
+    {
+      "key": "application_bureau",
+      "label": "+ bureau",
+      "groups": [
+        "application",
+        "bureau"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 158,
+      "cv_auc_mean": 0.7744583925883934,
+      "oof_auc": 0.7744251594384954,
+      "roc_auc": 0.7782181913174314,
+      "ks": 0.41801382894738387,
+      "roc_auc_ci": [
+        0.7709118239202065,
+        0.7855689784984755
+      ],
+      "ks_ci": [
+        0.4062940078249176,
+        0.4320632010001067
+      ],
+      "delta_auc": 0.006586595752495428,
+      "delta_auc_ci": [
+        0.004862641877924737,
+        0.008380881620001862
+      ]
+    },
+    {
+      "key": "application_bureau_bureau_balance",
+      "label": "+ bureau balance",
+      "groups": [
+        "application",
+        "bureau",
+        "bureau_balance"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 187,
+      "cv_auc_mean": 0.774663825377491,
+      "oof_auc": 0.7746348203720683,
+      "roc_auc": 0.7781165316649138,
+      "ks": 0.4170762887704112,
+      "roc_auc_ci": [
+        0.7708183871502273,
+        0.7854083299182438
+      ],
+      "ks_ci": [
+        0.4064705116768947,
+        0.4323278040514276
+      ],
+      "delta_auc": -0.00010165965251762721,
+      "delta_auc_ci": [
+        -0.0008169254517992218,
+        0.0006077506948668126
+      ]
+    },
+    {
+      "key": "application_bureau_bureau_balance_previous_application",
+      "label": "+ previous applications",
+      "groups": [
+        "application",
+        "bureau",
+        "bureau_balance",
+        "previous_application"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 211,
+      "cv_auc_mean": 0.78175821110127,
+      "oof_auc": 0.7817475470038149,
+      "roc_auc": 0.7854637419665202,
+      "ks": 0.4260578800622718,
+      "roc_auc_ci": [
+        0.7785795805127965,
+        0.7924016847271894
+      ],
+      "ks_ci": [
+        0.41567907083897787,
+        0.440970174398477
+      ],
+      "delta_auc": 0.007347210301606455,
+      "delta_auc_ci": [
+        0.005353247557595031,
+        0.009423806179310773
+      ]
+    },
+    {
+      "key": "application_bureau_bureau_balance_previous_application_installments",
+      "label": "+ installments",
+      "groups": [
+        "application",
+        "bureau",
+        "bureau_balance",
+        "previous_application",
+        "installments"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 255,
+      "cv_auc_mean": 0.7882127882477822,
+      "oof_auc": 0.7882026131645362,
+      "roc_auc": 0.7910557139568047,
+      "ks": 0.4352555012328152,
+      "roc_auc_ci": [
+        0.7845136663930197,
+        0.7976522170824806
+      ],
+      "ks_ci": [
+        0.4241522913123013,
+        0.44928693199613184
+      ],
+      "delta_auc": 0.005591971990284494,
+      "delta_auc_ci": [
+        0.003794319028612675,
+        0.007575530216240622
+      ]
+    },
+    {
+      "key": "application_bureau_bureau_balance_previous_application_installments_pos_cash",
+      "label": "+ POS and cash loan balances",
+      "groups": [
+        "application",
+        "bureau",
+        "bureau_balance",
+        "previous_application",
+        "installments",
+        "pos_cash"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 269,
+      "cv_auc_mean": 0.7901821309431625,
+      "oof_auc": 0.790160385392977,
+      "roc_auc": 0.7928912696990291,
+      "ks": 0.44289626237530916,
+      "roc_auc_ci": [
+        0.7863445736083812,
+        0.7993121826542328
+      ],
+      "ks_ci": [
+        0.43071608300841635,
+        0.45663566308331915
+      ],
+      "delta_auc": 0.0018355557422243818,
+      "delta_auc_ci": [
+        0.0008374515717778308,
+        0.0028723027391709343
+      ]
+    },
+    {
+      "key": "application_bureau_bureau_balance_previous_application_installments_pos_cash_credit_card",
+      "label": "+ credit card balances",
+      "groups": [
+        "application",
+        "bureau",
+        "bureau_balance",
+        "previous_application",
+        "installments",
+        "pos_cash",
+        "credit_card"
+      ],
+      "drop": [],
+      "kind": "cumulative",
+      "n_features": 287,
+      "cv_auc_mean": 0.7925288790581206,
+      "oof_auc": 0.7924932847049106,
+      "roc_auc": 0.7945699524532636,
+      "ks": 0.4448584215583583,
+      "roc_auc_ci": [
+        0.7879822629378941,
+        0.8010515268283742
+      ],
+      "ks_ci": [
+        0.4339000296136403,
+        0.458875482129415
+      ],
+      "delta_auc": 0.0016786827542344396,
+      "delta_auc_ci": [
+        0.0007162978722686953,
+        0.0027177512402776797
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "sk_id_curr": 100009,
+  "model": "lightgbm",
+  "in_holdout": true,
+  "probability_of_default": 0.004604,
+  "raw_model_probability": 0.004371,
+  "scorecard_points": 620.1,
+  "risk_band": "A",
+  "reason_codes": [
+    {
+      "feature": "ANNUITY_TO_CREDIT",
+      "value": 0.026463,
+      "direction": "decreases risk",
+      "contribution": -0.321203
+    },
+    {
+      "feature": "DOCUMENT_COUNT",
+      "value": 2.0,
+      "direction": "decreases risk",
+      "contribution": -0.280091
+    },
+    {
+      "feature": "EXT_SOURCE_MEAN",
+      "value": 0.663607,
+      "direction": "decreases risk",
+      "contribution": -0.200478
+    },
+    {
+      "feature": "AMT_ANNUITY",
+      "value": 41301.0,
+      "direction": "increases risk",
+      "contribution": 0.174802
+    },
+    {
+      "feature": "OCCUPATION_TYPE",
+      "value": "Accountants",
+      "direction": "decreases risk",
+      "contribution": -0.174623
+    }
+  ]
+}

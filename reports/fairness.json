@@ -1,0 +1,77 @@
+{
+  "model": "lightgbm",
+  "operating_bad_rate": 0.05,
+  "operating_point": {
+    "approval_rate": 0.8688031478139278,
+    "threshold": 0.1586266093160834,
+    "realized_bad_rate": 0.04998689972676573
+  },
+  "gender": [
+    {
+      "group": "F",
+      "count": 40561,
+      "observed_default_rate": 0.06991938068588052,
+      "mean_predicted_pd": 0.07305077529382588,
+      "roc_auc": 0.7899575279867574,
+      "approval_rate": 0.8884396341313084,
+      "bad_rate_among_approved": 0.04548229548229548
+    },
+    {
+      "group": "M",
+      "count": 20940,
+      "observed_default_rate": 0.10167144221585482,
+      "mean_predicted_pd": 0.09307785410801028,
+      "roc_auc": 0.7928893128624486,
+      "approval_rate": 0.8308022922636104,
+      "bad_rate_among_approved": 0.059320572512502154
+    }
+  ],
+  "gender_missing": 2,
+  "age_band": [
+    {
+      "group": "under 30",
+      "count": 8905,
+      "observed_default_rate": 0.11297024143739472,
+      "mean_predicted_pd": 0.11270409832394629,
+      "roc_auc": 0.7685913887481542,
+      "approval_rate": 0.772599663110612,
+      "bad_rate_among_approved": 0.06468023255813954
+    },
+    {
+      "group": "30-40",
+      "count": 16487,
+      "observed_default_rate": 0.09571177291199126,
+      "mean_predicted_pd": 0.09517353987374284,
+      "roc_auc": 0.7990657049896538,
+      "approval_rate": 0.8250743009643962,
+      "bad_rate_among_approved": 0.054767330735867086
+    },
+    {
+      "group": "40-50",
+      "count": 15303,
+      "observed_default_rate": 0.07580213030124812,
+      "mean_predicted_pd": 0.07588915561433049,
+      "roc_auc": 0.8023770136073164,
+      "approval_rate": 0.8810690714239038,
+      "bad_rate_among_approved": 0.046725506192983754
+    },
+    {
+      "group": "50-60",
+      "count": 13617,
+      "observed_default_rate": 0.06345009914077991,
+      "mean_predicted_pd": 0.06088412601221418,
+      "roc_auc": 0.7809869899892836,
+      "approval_rate": 0.9243592568113388,
+      "bad_rate_among_approved": 0.045523158814650036
+    },
+    {
+      "group": "60+",
+      "count": 7191,
+      "observed_default_rate": 0.04964539007092199,
+      "mean_predicted_pd": 0.048558113639774594,
+      "roc_auc": 0.7498903570793257,
+      "approval_rate": 0.9568905576414963,
+      "bad_rate_among_approved": 0.04040110449062636
+    }
+  ]
+}

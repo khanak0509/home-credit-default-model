@@ -1,0 +1,2302 @@
+{
+  "threshold": 0.75,
+  "features": [
+    {
+      "feature": "EXT_SOURCE_PRODUCT",
+      "group": "application",
+      "auc": 0.7385472148318705,
+      "direction": -1,
+      "coverage": 0.3562119931059153,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_MEAN",
+      "group": "application",
+      "auc": 0.716524321554117,
+      "direction": -1,
+      "coverage": 0.9994349777243017,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_MIN",
+      "group": "application",
+      "auc": 0.6910115461265534,
+      "direction": -1,
+      "coverage": 0.9994349777243017,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_MAX",
+      "group": "application",
+      "auc": 0.6863147339087661,
+      "direction": -1,
+      "coverage": 0.9994349777243017,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_3",
+      "group": "application",
+      "auc": 0.6797088801755791,
+      "direction": -1,
+      "coverage": 0.8016121426945465,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_1",
+      "group": "application",
+      "auc": 0.6658866597492799,
+      "direction": -1,
+      "coverage": 0.4366240122272446,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_2",
+      "group": "application",
+      "auc": 0.6552677613156674,
+      "direction": -1,
+      "coverage": 0.9978415336086631,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_UTILIZATION_3M",
+      "group": "credit_card",
+      "auc": 0.6484098365968498,
+      "direction": 1,
+      "coverage": 0.2133223309811063,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_UTILIZATION_12M",
+      "group": "credit_card",
+      "auc": 0.6391089158351425,
+      "direction": 1,
+      "coverage": 0.2325696725309746,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_UTILIZATION",
+      "group": "credit_card",
+      "auc": 0.6306076514452453,
+      "direction": 1,
+      "coverage": 0.2803933205424214,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_DRAWING_COUNT",
+      "group": "credit_card",
+      "auc": 0.6241363831595219,
+      "direction": 1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MAX_UTILIZATION",
+      "group": "credit_card",
+      "auc": 0.6107921943134054,
+      "direction": 1,
+      "coverage": 0.2803933205424214,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_BALANCE_3M",
+      "group": "credit_card",
+      "auc": 0.6034767997337757,
+      "direction": 1,
+      "coverage": 0.2780681929042958,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MONTHS_SINCE_LAST_DPD",
+      "group": "pos_cash",
+      "auc": 0.5977282531567766,
+      "direction": -1,
+      "coverage": 0.17829094988780853,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_DEBT_TO_CREDIT",
+      "group": "bureau",
+      "auc": 0.5936743327135607,
+      "direction": 1,
+      "coverage": 0.829582777795844,
+      "flagged": false
+    },
+    {
+      "feature": "DAYS_BIRTH",
+      "group": "application",
+      "auc": 0.5843213514375288,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "AGE_YEARS",
+      "group": "application",
+      "auc": 0.5843213514375287,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_ACTIVE_SHARE",
+      "group": "bureau",
+      "auc": 0.5834560459846152,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_ACTIVE_DEBT_TO_CREDIT",
+      "group": "bureau",
+      "auc": 0.5830311096727118,
+      "direction": 1,
+      "coverage": 0.6619744073363468,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_DPD_24M",
+      "group": "installments",
+      "auc": 0.5826504673943307,
+      "direction": 1,
+      "coverage": 0.8197660238691424,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MAX_DPD_24M",
+      "group": "installments",
+      "auc": 0.5823747750937086,
+      "direction": 1,
+      "coverage": 0.8197660238691424,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MAX_BALANCE",
+      "group": "credit_card",
+      "auc": 0.5823125294481158,
+      "direction": 1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "DAYS_EMPLOYED",
+      "group": "application",
+      "auc": 0.5822811744435077,
+      "direction": 1,
+      "coverage": 0.8205627459269618,
+      "flagged": false
+    },
+    {
+      "feature": "EMPLOYMENT_YEARS",
+      "group": "application",
+      "auc": 0.5822811744435077,
+      "direction": -1,
+      "coverage": 0.8205627459269618,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_DAYS_SINCE_LAST_CREDIT",
+      "group": "bureau",
+      "auc": 0.581518633624871,
+      "direction": -1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_ATM_DRAWINGS",
+      "group": "credit_card",
+      "auc": 0.5810001314258431,
+      "direction": 1,
+      "coverage": 0.19925774771552143,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DAYS_SINCE_LAST_LATE",
+      "group": "installments",
+      "auc": 0.5803103522191575,
+      "direction": -1,
+      "coverage": 0.5042640889727164,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_CREDITS_LAST_YEAR",
+      "group": "bureau",
+      "auc": 0.5802479005118798,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_SHARE_24M",
+      "group": "installments",
+      "auc": 0.5794069048087978,
+      "direction": 1,
+      "coverage": 0.8197660238691424,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MAX_DPD_12M",
+      "group": "installments",
+      "auc": 0.5787296668181902,
+      "direction": 1,
+      "coverage": 0.7066680758349322,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_DPD_12M",
+      "group": "installments",
+      "auc": 0.5776056534068913,
+      "direction": 1,
+      "coverage": 0.7066680758349322,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_DAYS_SINCE_FIRST_CREDIT",
+      "group": "bureau",
+      "auc": 0.5765159325200002,
+      "direction": -1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_SHARE_12M",
+      "group": "installments",
+      "auc": 0.5749451944147601,
+      "direction": 1,
+      "coverage": 0.7066680758349322,
+      "flagged": false
+    },
+    {
+      "feature": "OCCUPATION_TYPE",
+      "group": "application",
+      "auc": 0.5735617930141587,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_CREDIT_TO_APPLICATION",
+      "group": "previous_application",
+      "auc": 0.5731439967086386,
+      "direction": 1,
+      "coverage": 0.9430587623166726,
+      "flagged": false
+    },
+    {
+      "feature": "ORGANIZATION_TYPE",
+      "group": "application",
+      "auc": 0.5722511682632737,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "EMPLOYED_TO_AGE",
+      "group": "application",
+      "auc": 0.5692556798945645,
+      "direction": -1,
+      "coverage": 0.8205627459269618,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MAX_DPD_6M",
+      "group": "installments",
+      "auc": 0.5682088068471021,
+      "direction": 1,
+      "coverage": 0.5922368378264121,
+      "flagged": false
+    },
+    {
+      "feature": "CREDIT_TO_GOODS",
+      "group": "application",
+      "auc": 0.5678947972205329,
+      "direction": 1,
+      "coverage": 0.9991016552307243,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_DPD_6M",
+      "group": "installments",
+      "auc": 0.5668216588861689,
+      "direction": 1,
+      "coverage": 0.5922368378264121,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_COUNT_24M",
+      "group": "installments",
+      "auc": 0.5655728936897751,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_SHARE_ALL",
+      "group": "installments",
+      "auc": 0.5651733287041436,
+      "direction": 1,
+      "coverage": 0.9484122467562031,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_SHARE_6M",
+      "group": "installments",
+      "auc": 0.56471600553694,
+      "direction": 1,
+      "coverage": 0.5922368378264121,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_REFUSED_SHARE",
+      "group": "previous_application",
+      "auc": 0.5606485408992345,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_ACTIVE_COUNT",
+      "group": "bureau",
+      "auc": 0.5603174104440741,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_DAYS_SINCE_LAST_REFUSAL",
+      "group": "previous_application",
+      "auc": 0.56016217644365,
+      "direction": -1,
+      "coverage": 0.32655035608598093,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_DPD_ALL",
+      "group": "installments",
+      "auc": 0.5601369088859974,
+      "direction": 1,
+      "coverage": 0.9484122467562031,
+      "flagged": false
+    },
+    {
+      "feature": "OWN_CAR_AGE",
+      "group": "application",
+      "auc": 0.5600410246930091,
+      "direction": 1,
+      "coverage": 0.33978569802608044,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_C_24M",
+      "group": "bureau_balance",
+      "auc": 0.5585215141218725,
+      "direction": -1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "NAME_INCOME_TYPE",
+      "group": "application",
+      "auc": 0.5582634436465342,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_C_12M",
+      "group": "bureau_balance",
+      "auc": 0.5582292444547869,
+      "direction": -1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MAX_DPD_3M",
+      "group": "installments",
+      "auc": 0.5574536095493109,
+      "direction": 1,
+      "coverage": 0.51952375532503,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_C_6M",
+      "group": "bureau_balance",
+      "auc": 0.5573031079345836,
+      "direction": -1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_0_12M",
+      "group": "bureau_balance",
+      "auc": 0.5571039434574886,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "BB_ROLL_RATE",
+      "group": "bureau_balance",
+      "auc": 0.5569685694024141,
+      "direction": 1,
+      "coverage": 0.2906328249487822,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MONTH_COUNT",
+      "group": "credit_card",
+      "auc": 0.5565895992959708,
+      "direction": -1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_0_24M",
+      "group": "bureau_balance",
+      "auc": 0.5565710541990945,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_REFUSED_COUNT",
+      "group": "previous_application",
+      "auc": 0.5565398723730242,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_DPD_3M",
+      "group": "installments",
+      "auc": 0.5563664099696405,
+      "direction": 1,
+      "coverage": 0.51952375532503,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_0_6M",
+      "group": "bureau_balance",
+      "auc": 0.5559596333285947,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "BB_MONTH_COUNT",
+      "group": "bureau_balance",
+      "auc": 0.5556223860477836,
+      "direction": -1,
+      "coverage": 0.2994455464862931,
+      "flagged": false
+    },
+    {
+      "feature": "DAYS_LAST_PHONE_CHANGE",
+      "group": "application",
+      "auc": 0.554899566792039,
+      "direction": 1,
+      "coverage": 0.9999959350915417,
+      "flagged": false
+    },
+    {
+      "feature": "PHONE_CHANGE_YEARS",
+      "group": "application",
+      "auc": 0.5548995667920389,
+      "direction": -1,
+      "coverage": 0.9999959350915417,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_COUNT_12M",
+      "group": "installments",
+      "auc": 0.5548685538119681,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_SHARE_3M",
+      "group": "installments",
+      "auc": 0.5545486583045138,
+      "direction": 1,
+      "coverage": 0.51952375532503,
+      "flagged": false
+    },
+    {
+      "feature": "DAYS_ID_PUBLISH",
+      "group": "application",
+      "auc": 0.5537257847800336,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "ID_PUBLISH_YEARS",
+      "group": "application",
+      "auc": 0.5537257847800336,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_APPROVED_ANNUITY",
+      "group": "previous_application",
+      "auc": 0.5522644275476889,
+      "direction": -1,
+      "coverage": 0.9431522552112126,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MIN_CREDIT_TO_APPLICATION",
+      "group": "previous_application",
+      "auc": 0.550827165820035,
+      "direction": 1,
+      "coverage": 0.9430587623166726,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MAX_DPD_ALL",
+      "group": "installments",
+      "auc": 0.5508039353301832,
+      "direction": 1,
+      "coverage": 0.9484122467562031,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MEAN_PAYMENT_TO_MINIMUM",
+      "group": "credit_card",
+      "auc": 0.5507811498377841,
+      "direction": -1,
+      "coverage": 0.19310754121817178,
+      "flagged": false
+    },
+    {
+      "feature": "FLOORSMAX_AVG",
+      "group": "application",
+      "auc": 0.5501811767644069,
+      "direction": -1,
+      "coverage": 0.5028738902799909,
+      "flagged": false
+    },
+    {
+      "feature": "FLOORSMAX_MEDI",
+      "group": "application",
+      "auc": 0.5498981273620948,
+      "direction": -1,
+      "coverage": 0.5028738902799909,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_COUNT_ALL",
+      "group": "installments",
+      "auc": 0.5495181130482255,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "REGION_RATING_CLIENT_W_CITY",
+      "group": "application",
+      "auc": 0.5494981226234382,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_1_24M",
+      "group": "bureau_balance",
+      "auc": 0.5490667398680478,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "FLOORSMAX_MODE",
+      "group": "application",
+      "auc": 0.5485571543869356,
+      "direction": -1,
+      "coverage": 0.5028738902799909,
+      "flagged": false
+    },
+    {
+      "feature": "REGION_RATING_CLIENT",
+      "group": "application",
+      "auc": 0.5481023010339227,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "LIVINGAREA_AVG",
+      "group": "application",
+      "auc": 0.5464625762984152,
+      "direction": -1,
+      "coverage": 0.4981382719261162,
+      "flagged": false
+    },
+    {
+      "feature": "POS_LOAN_COUNT",
+      "group": "pos_cash",
+      "auc": 0.5462827643805669,
+      "direction": -1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_MAX_EVER_OVERDUE",
+      "group": "bureau",
+      "auc": 0.5462265644506976,
+      "direction": 1,
+      "coverage": 0.5972976488569477,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_CLOSED_COUNT",
+      "group": "bureau",
+      "auc": 0.546195139623352,
+      "direction": -1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "LIVINGAREA_MEDI",
+      "group": "application",
+      "auc": 0.5460278107459411,
+      "direction": -1,
+      "coverage": 0.4981382719261162,
+      "flagged": false
+    },
+    {
+      "feature": "BB_ROLL_RATE_12M",
+      "group": "bureau_balance",
+      "auc": 0.5456577104667701,
+      "direction": 1,
+      "coverage": 0.28008845240805175,
+      "flagged": false
+    },
+    {
+      "feature": "NAME_EDUCATION_TYPE",
+      "group": "application",
+      "auc": 0.5445810747664093,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_1_12M",
+      "group": "bureau_balance",
+      "auc": 0.5443258744925206,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "BB_WORST_BUCKET_12M",
+      "group": "bureau_balance",
+      "auc": 0.5442487087975085,
+      "direction": 1,
+      "coverage": 0.2838241032811941,
+      "flagged": false
+    },
+    {
+      "feature": "TOTALAREA_MODE",
+      "group": "application",
+      "auc": 0.544081777248572,
+      "direction": -1,
+      "coverage": 0.5174669116451498,
+      "flagged": false
+    },
+    {
+      "feature": "LIVINGAREA_MODE",
+      "group": "application",
+      "auc": 0.5436451038918115,
+      "direction": -1,
+      "coverage": 0.4981382719261162,
+      "flagged": false
+    },
+    {
+      "feature": "BB_WORST_BUCKET",
+      "group": "bureau_balance",
+      "auc": 0.5432999444080687,
+      "direction": 1,
+      "coverage": 0.2941489707651784,
+      "flagged": false
+    },
+    {
+      "feature": "DAYS_REGISTRATION",
+      "group": "application",
+      "auc": 0.5428359717324381,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MONTH_COUNT",
+      "group": "pos_cash",
+      "auc": 0.5428002502619795,
+      "direction": -1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_REFUSED_LAST_YEAR",
+      "group": "previous_application",
+      "auc": 0.5422854707390127,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "WALLSMATERIAL_MODE",
+      "group": "application",
+      "auc": 0.5409015296126068,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_HIGH_YIELD_SHARE",
+      "group": "previous_application",
+      "auc": 0.5400228334390037,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "REG_CITY_NOT_WORK_CITY",
+      "group": "application",
+      "auc": 0.539969930928317,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "ELEVATORS_AVG",
+      "group": "application",
+      "auc": 0.5397731125916372,
+      "direction": -1,
+      "coverage": 0.46742788852395045,
+      "flagged": false
+    },
+    {
+      "feature": "APARTMENTS_AVG",
+      "group": "application",
+      "auc": 0.5395219744876658,
+      "direction": -1,
+      "coverage": 0.4929758381841241,
+      "flagged": false
+    },
+    {
+      "feature": "ADDRESS_MISMATCH_COUNT",
+      "group": "application",
+      "auc": 0.539381284116965,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_COUNT_6M",
+      "group": "installments",
+      "auc": 0.5391995713211646,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "APARTMENTS_MEDI",
+      "group": "application",
+      "auc": 0.5391422736216727,
+      "direction": -1,
+      "coverage": 0.4929758381841241,
+      "flagged": false
+    },
+    {
+      "feature": "ELEVATORS_MEDI",
+      "group": "application",
+      "auc": 0.539020368562021,
+      "direction": -1,
+      "coverage": 0.46742788852395045,
+      "flagged": false
+    },
+    {
+      "feature": "POS_COMPLETED_LOAN_COUNT",
+      "group": "pos_cash",
+      "auc": 0.5379476872598956,
+      "direction": -1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "APARTMENTS_MODE",
+      "group": "application",
+      "auc": 0.5372484564264328,
+      "direction": -1,
+      "coverage": 0.4929758381841241,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_1_6M",
+      "group": "bureau_balance",
+      "auc": 0.5372113706254992,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_DOWN_PAYMENT_RATE",
+      "group": "previous_application",
+      "auc": 0.5372091738465203,
+      "direction": -1,
+      "coverage": 0.8897718773373223,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MAX_APPROVED_CREDIT",
+      "group": "previous_application",
+      "auc": 0.5370618650790568,
+      "direction": -1,
+      "coverage": 0.9431522552112126,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_3",
+      "group": "application",
+      "auc": 0.5368766661214347,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "ELEVATORS_MODE",
+      "group": "application",
+      "auc": 0.5367466594548107,
+      "direction": -1,
+      "coverage": 0.46742788852395045,
+      "flagged": false
+    },
+    {
+      "feature": "INST_PREVIOUS_LOAN_COUNT",
+      "group": "installments",
+      "auc": 0.5361800376569945,
+      "direction": -1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "FLOORSMIN_AVG",
+      "group": "application",
+      "auc": 0.5356331833888262,
+      "direction": -1,
+      "coverage": 0.32148141523852886,
+      "flagged": false
+    },
+    {
+      "feature": "FLOORSMIN_MEDI",
+      "group": "application",
+      "auc": 0.5354094971033769,
+      "direction": -1,
+      "coverage": 0.32148141523852886,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_ACTIVE_DEBT_SUM",
+      "group": "bureau",
+      "auc": 0.535274717248318,
+      "direction": 1,
+      "coverage": 0.6717261227277161,
+      "flagged": false
+    },
+    {
+      "feature": "NAME_FAMILY_STATUS",
+      "group": "application",
+      "auc": 0.5350719131992469,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "HOUSETYPE_MODE",
+      "group": "application",
+      "auc": 0.5349665234288283,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_REVOLVING_SHARE",
+      "group": "previous_application",
+      "auc": 0.5348485451808294,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "LIVINGAPARTMENTS_AVG",
+      "group": "application",
+      "auc": 0.5345667144645204,
+      "direction": -1,
+      "coverage": 0.3166116549055315,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_APPROVED_CREDIT",
+      "group": "previous_application",
+      "auc": 0.5344922221617181,
+      "direction": -1,
+      "coverage": 0.9431522552112126,
+      "flagged": false
+    },
+    {
+      "feature": "LIVINGAPARTMENTS_MEDI",
+      "group": "application",
+      "auc": 0.5341942774648083,
+      "direction": -1,
+      "coverage": 0.3166116549055315,
+      "flagged": false
+    },
+    {
+      "feature": "FLOORSMIN_MODE",
+      "group": "application",
+      "auc": 0.5339985942098366,
+      "direction": -1,
+      "coverage": 0.32148141523852886,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_APPROVED_COUNT",
+      "group": "previous_application",
+      "auc": 0.5338114833161737,
+      "direction": -1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_GOODS_PRICE",
+      "group": "application",
+      "auc": 0.5337236339494755,
+      "direction": -1,
+      "coverage": 0.9991016552307243,
+      "flagged": false
+    },
+    {
+      "feature": "ANNUITY_TO_CREDIT",
+      "group": "application",
+      "auc": 0.5331277615669039,
+      "direction": 1,
+      "coverage": 0.9999593509154174,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_PAYBACK_RATIO",
+      "group": "previous_application",
+      "auc": 0.5327340296715413,
+      "direction": 1,
+      "coverage": 0.9431238008520049,
+      "flagged": false
+    },
+    {
+      "feature": "DAYS_EMPLOYED_ANOMALY",
+      "group": "application",
+      "auc": 0.5326899858697459,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_EMP_PHONE",
+      "group": "application",
+      "auc": 0.5326869190511838,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_APPLICATIONS_LAST_YEAR",
+      "group": "previous_application",
+      "auc": 0.5326580869643532,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "LIVINGAPARTMENTS_MODE",
+      "group": "application",
+      "auc": 0.5324831240634696,
+      "direction": -1,
+      "coverage": 0.3166116549055315,
+      "flagged": false
+    },
+    {
+      "feature": "REGION_POPULATION_RELATIVE",
+      "group": "application",
+      "auc": 0.5323509565810987,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MEAN_REMAINING_SHARE",
+      "group": "pos_cash",
+      "auc": 0.530854828850319,
+      "direction": 1,
+      "coverage": 0.5063168677441384,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_AMT_APPLICATION",
+      "group": "previous_application",
+      "auc": 0.5300632470407731,
+      "direction": -1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "YEARS_BEGINEXPLUATATION_MEDI",
+      "group": "application",
+      "auc": 0.5297554136222975,
+      "direction": -1,
+      "coverage": 0.512418295339989,
+      "flagged": false
+    },
+    {
+      "feature": "YEARS_BEGINEXPLUATATION_AVG",
+      "group": "application",
+      "auc": 0.5297133008265611,
+      "direction": -1,
+      "coverage": 0.512418295339989,
+      "flagged": false
+    },
+    {
+      "feature": "INST_LATE_COUNT_3M",
+      "group": "installments",
+      "auc": 0.5296895865717075,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "YEARS_BEGINEXPLUATATION_MODE",
+      "group": "application",
+      "auc": 0.5293819351450236,
+      "direction": -1,
+      "coverage": 0.512418295339989,
+      "flagged": false
+    },
+    {
+      "feature": "INST_COUNT_ALL",
+      "group": "installments",
+      "auc": 0.5275634302585854,
+      "direction": -1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "POS_REMAINING_INSTALMENTS",
+      "group": "pos_cash",
+      "auc": 0.5273168279101922,
+      "direction": 1,
+      "coverage": 0.5063168677441384,
+      "flagged": false
+    },
+    {
+      "feature": "ENTRANCES_AVG",
+      "group": "application",
+      "auc": 0.5269070785406731,
+      "direction": -1,
+      "coverage": 0.49686595557868035,
+      "flagged": false
+    },
+    {
+      "feature": "ENTRANCES_MEDI",
+      "group": "application",
+      "auc": 0.5264252385060268,
+      "direction": -1,
+      "coverage": 0.49686595557868035,
+      "flagged": false
+    },
+    {
+      "feature": "HOUR_APPR_PROCESS_START",
+      "group": "application",
+      "auc": 0.5259413669044117,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "YEARS_BUILD_MEDI",
+      "group": "application",
+      "auc": 0.5258312224363457,
+      "direction": -1,
+      "coverage": 0.3352126760105362,
+      "flagged": false
+    },
+    {
+      "feature": "POS_DPD_DEF_MONTH_SHARE",
+      "group": "pos_cash",
+      "auc": 0.525825706997653,
+      "direction": 1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "YEARS_BUILD_AVG",
+      "group": "application",
+      "auc": 0.5256657365950383,
+      "direction": -1,
+      "coverage": 0.3352126760105362,
+      "flagged": false
+    },
+    {
+      "feature": "POS_DPD_MONTH_SHARE",
+      "group": "pos_cash",
+      "auc": 0.5256424606226782,
+      "direction": 1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_DAYS_SINCE_LAST_DECISION",
+      "group": "previous_application",
+      "auc": 0.5253907777446909,
+      "direction": -1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "YEARS_BUILD_MODE",
+      "group": "application",
+      "auc": 0.5253550390125845,
+      "direction": -1,
+      "coverage": 0.3352126760105362,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MAX_DPD_DEF",
+      "group": "pos_cash",
+      "auc": 0.5251656996922129,
+      "direction": 1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "BASEMENTAREA_AVG",
+      "group": "application",
+      "auc": 0.5251059201236264,
+      "direction": -1,
+      "coverage": 0.4153482813567039,
+      "flagged": false
+    },
+    {
+      "feature": "POS_ACTIVE_LOAN_COUNT",
+      "group": "pos_cash",
+      "auc": 0.5245984734161011,
+      "direction": -1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "FONDKAPREMONT_MODE",
+      "group": "application",
+      "auc": 0.5242702462482082,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BASEMENTAREA_MEDI",
+      "group": "application",
+      "auc": 0.5242263102463411,
+      "direction": -1,
+      "coverage": 0.4153482813567039,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_NEW_CLIENT_SHARE",
+      "group": "previous_application",
+      "auc": 0.5242101540263213,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "ENTRANCES_MODE",
+      "group": "application",
+      "auc": 0.5239266414492545,
+      "direction": -1,
+      "coverage": 0.49686595557868035,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MAX_DPD",
+      "group": "pos_cash",
+      "auc": 0.5238976044790011,
+      "direction": 1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "LIVE_CITY_NOT_WORK_CITY",
+      "group": "application",
+      "auc": 0.5235269701287865,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_TOTAL_UNDERPAYMENT_24M",
+      "group": "installments",
+      "auc": 0.5231098486343462,
+      "direction": 1,
+      "coverage": 0.8198148027706416,
+      "flagged": false
+    },
+    {
+      "feature": "REG_CITY_NOT_LIVE_CITY",
+      "group": "application",
+      "auc": 0.5224571714579662,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_ACTIVE_LIMIT_SUM",
+      "group": "bureau",
+      "auc": 0.5220386992086037,
+      "direction": 1,
+      "coverage": 0.6136954895775747,
+      "flagged": false
+    },
+    {
+      "feature": "CONTACT_FLAG_COUNT",
+      "group": "application",
+      "auc": 0.5213332171887686,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_PAYMENT_RATIO_24M",
+      "group": "installments",
+      "auc": 0.5213278962144557,
+      "direction": -1,
+      "coverage": 0.8197660238691424,
+      "flagged": false
+    },
+    {
+      "feature": "POS_DPD_MONTH_SHARE_12M",
+      "group": "pos_cash",
+      "auc": 0.5212954121944815,
+      "direction": 1,
+      "coverage": 0.6723155344541641,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MAX_DPD_12M",
+      "group": "pos_cash",
+      "auc": 0.5212916679026695,
+      "direction": 1,
+      "coverage": 0.6723155344541641,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_WORK_PHONE",
+      "group": "application",
+      "auc": 0.5207689357098465,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "ANNUITY_TO_INCOME",
+      "group": "application",
+      "auc": 0.5205282413085427,
+      "direction": 1,
+      "coverage": 0.9999593509154174,
+      "flagged": false
+    },
+    {
+      "feature": "BASEMENTAREA_MODE",
+      "group": "application",
+      "auc": 0.520519516538071,
+      "direction": -1,
+      "coverage": 0.4153482813567039,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_INCOME_TOTAL",
+      "group": "application",
+      "auc": 0.5204541276973197,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_PAYMENT_RATIO_12M",
+      "group": "installments",
+      "auc": 0.5204364337294509,
+      "direction": -1,
+      "coverage": 0.7066680758349322,
+      "flagged": false
+    },
+    {
+      "feature": "COMMONAREA_AVG",
+      "group": "application",
+      "auc": 0.5203161351069694,
+      "direction": -1,
+      "coverage": 0.30160401287763,
+      "flagged": false
+    },
+    {
+      "feature": "INST_TOTAL_UNDERPAYMENT_12M",
+      "group": "installments",
+      "auc": 0.5200299228028137,
+      "direction": 1,
+      "coverage": 0.7067534389125557,
+      "flagged": false
+    },
+    {
+      "feature": "EXT_SOURCE_STD",
+      "group": "application",
+      "auc": 0.5199934526893264,
+      "direction": 1,
+      "coverage": 0.9994349777243017,
+      "flagged": false
+    },
+    {
+      "feature": "COMMONAREA_MEDI",
+      "group": "application",
+      "auc": 0.5198169771450496,
+      "direction": -1,
+      "coverage": 0.30160401287763,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_YEAR",
+      "group": "application",
+      "auc": 0.5197885220602303,
+      "direction": 1,
+      "coverage": 0.864866183213554,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_PHONE",
+      "group": "application",
+      "auc": 0.5196505657935135,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_TOTAL_UNDERPAYMENT_ALL",
+      "group": "installments",
+      "auc": 0.5195035788929298,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_CREDIT",
+      "group": "application",
+      "auc": 0.5193173215791578,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_PAYMENT_RATIO_ALL",
+      "group": "installments",
+      "auc": 0.5191497550143694,
+      "direction": -1,
+      "coverage": 0.9484041169392865,
+      "flagged": false
+    },
+    {
+      "feature": "INCOME_PER_FAMILY_MEMBER",
+      "group": "application",
+      "auc": 0.5189889054196637,
+      "direction": -1,
+      "coverage": 0.9999918701830834,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MONTHS_SINCE_LAST_RECORD",
+      "group": "credit_card",
+      "auc": 0.5189356929014586,
+      "direction": -1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "DEF_30_CNT_SOCIAL_CIRCLE",
+      "group": "application",
+      "auc": 0.5187057642788132,
+      "direction": 1,
+      "coverage": 0.9967033592403499,
+      "flagged": false
+    },
+    {
+      "feature": "CNT_CHILDREN",
+      "group": "application",
+      "auc": 0.518258320785962,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "NAME_HOUSING_TYPE",
+      "group": "application",
+      "auc": 0.518040416914724,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_PAYMENT_RATIO_6M",
+      "group": "installments",
+      "auc": 0.5178209700619889,
+      "direction": -1,
+      "coverage": 0.5922368378264121,
+      "flagged": false
+    },
+    {
+      "feature": "COMMONAREA_MODE",
+      "group": "application",
+      "auc": 0.5171818577679894,
+      "direction": -1,
+      "coverage": 0.30160401287763,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_OWN_CAR",
+      "group": "application",
+      "auc": 0.516598382862609,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_TOTAL_UNDERPAYMENT_6M",
+      "group": "installments",
+      "auc": 0.5164994141315904,
+      "direction": 1,
+      "coverage": 0.5923709798055348,
+      "flagged": false
+    },
+    {
+      "feature": "DEF_60_CNT_SOCIAL_CIRCLE",
+      "group": "application",
+      "auc": 0.5160444881512156,
+      "direction": 1,
+      "coverage": 0.9967033592403499,
+      "flagged": false
+    },
+    {
+      "feature": "NAME_CONTRACT_TYPE",
+      "group": "application",
+      "auc": 0.5157646865830772,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_MEAN_PAYMENT_RATIO_3M",
+      "group": "installments",
+      "auc": 0.5154539859170872,
+      "direction": -1,
+      "coverage": 0.51952375532503,
+      "flagged": false
+    },
+    {
+      "feature": "NONLIVINGAREA_AVG",
+      "group": "application",
+      "auc": 0.5145786836357513,
+      "direction": -1,
+      "coverage": 0.44870085525673964,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_6",
+      "group": "application",
+      "auc": 0.5144618761633716,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "LANDAREA_AVG",
+      "group": "application",
+      "auc": 0.5144494609876304,
+      "direction": -1,
+      "coverage": 0.406584338720692,
+      "flagged": false
+    },
+    {
+      "feature": "LANDAREA_MEDI",
+      "group": "application",
+      "auc": 0.5142031167944343,
+      "direction": -1,
+      "coverage": 0.406584338720692,
+      "flagged": false
+    },
+    {
+      "feature": "INST_TOTAL_UNDERPAYMENT_3M",
+      "group": "installments",
+      "auc": 0.5139253110299463,
+      "direction": 1,
+      "coverage": 0.5197188709310266,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_X_6M",
+      "group": "bureau_balance",
+      "auc": 0.5138805907963955,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_CANCELED_COUNT",
+      "group": "previous_application",
+      "auc": 0.5136027634045691,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "NONLIVINGAREA_MEDI",
+      "group": "application",
+      "auc": 0.5133639364143064,
+      "direction": -1,
+      "coverage": 0.44870085525673964,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_OPEN_LOAN_COUNT",
+      "group": "previous_application",
+      "auc": 0.5133318197491935,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MAX_DPD_12M",
+      "group": "credit_card",
+      "auc": 0.513325223340303,
+      "direction": 1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "NONLIVINGAREA_MODE",
+      "group": "application",
+      "auc": 0.5128565249164025,
+      "direction": -1,
+      "coverage": 0.44870085525673964,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_X_24M",
+      "group": "bureau_balance",
+      "auc": 0.5125108130788617,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_X_12M",
+      "group": "bureau_balance",
+      "auc": 0.5123527684277215,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "LANDAREA_MODE",
+      "group": "application",
+      "auc": 0.512273258831581,
+      "direction": -1,
+      "coverage": 0.406584338720692,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_APPLICATION_COUNT",
+      "group": "previous_application",
+      "auc": 0.5119777832205608,
+      "direction": 1,
+      "coverage": 0.9464488959708628,
+      "flagged": false
+    },
+    {
+      "feature": "INST_COUNT_3M",
+      "group": "installments",
+      "auc": 0.5118918912132828,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "DOCUMENT_COUNT",
+      "group": "application",
+      "auc": 0.511220482283247,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "POS_MONTHS_SINCE_LAST_RECORD",
+      "group": "pos_cash",
+      "auc": 0.5111688982928602,
+      "direction": 1,
+      "coverage": 0.9412539429612045,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DPD30_COUNT_ALL",
+      "group": "installments",
+      "auc": 0.5111324162451552,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "group": "application",
+      "auc": 0.5104616198694223,
+      "direction": 1,
+      "coverage": 0.9967033592403499,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_TERM",
+      "group": "previous_application",
+      "auc": 0.5103148478743348,
+      "direction": 1,
+      "coverage": 0.9431522552112126,
+      "flagged": false
+    },
+    {
+      "feature": "OBS_60_CNT_SOCIAL_CIRCLE",
+      "group": "application",
+      "auc": 0.5102297046910715,
+      "direction": 1,
+      "coverage": 0.9967033592403499,
+      "flagged": false
+    },
+    {
+      "feature": "INST_COUNT_6M",
+      "group": "installments",
+      "auc": 0.5096490371441319,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DPD30_COUNT_24M",
+      "group": "installments",
+      "auc": 0.5096465376544903,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MAX_LIMIT",
+      "group": "credit_card",
+      "auc": 0.508425916644378,
+      "direction": -1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "INST_COUNT_12M",
+      "group": "installments",
+      "auc": 0.5082850730394778,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "CNT_FAM_MEMBERS",
+      "group": "application",
+      "auc": 0.507232416778869,
+      "direction": 1,
+      "coverage": 0.9999918701830834,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_TOTAL_OVERDUE",
+      "group": "bureau",
+      "auc": 0.5071846675346547,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_MAX_OVERDUE",
+      "group": "bureau",
+      "auc": 0.5071844854295411,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_OVERDUE_SHARE",
+      "group": "bureau",
+      "auc": 0.5070185362270397,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_MEAN_DAYS_LATE_CLOSE",
+      "group": "previous_application",
+      "auc": 0.5070024594500393,
+      "direction": 1,
+      "coverage": 0.8356069721309876,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_MAX_DAYS_OVERDUE",
+      "group": "bureau",
+      "auc": 0.5069896402168205,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "group": "application",
+      "auc": 0.5068697211576643,
+      "direction": -1,
+      "coverage": 0.864866183213554,
+      "flagged": false
+    },
+    {
+      "feature": "PREV_DAYS_SINCE_LAST_APPROVAL",
+      "group": "previous_application",
+      "auc": 0.5067966541388168,
+      "direction": -1,
+      "coverage": 0.9431522552112126,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_CREDIT_TYPE_COUNT",
+      "group": "bureau",
+      "auc": 0.5067680973529267,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_2_24M",
+      "group": "bureau_balance",
+      "auc": 0.5063810363622334,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MAX_DPD_DEF",
+      "group": "credit_card",
+      "auc": 0.5059214495159343,
+      "direction": -1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_2_12M",
+      "group": "bureau_balance",
+      "auc": 0.5055603322625895,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_2_6M",
+      "group": "bureau_balance",
+      "auc": 0.5051584140200874,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DPD30_COUNT_12M",
+      "group": "installments",
+      "auc": 0.5047148659431595,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_MON",
+      "group": "application",
+      "auc": 0.5044260682325692,
+      "direction": -1,
+      "coverage": 0.864866183213554,
+      "flagged": false
+    },
+    {
+      "feature": "INST_COUNT_24M",
+      "group": "installments",
+      "auc": 0.5043678200851036,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_8",
+      "group": "application",
+      "auc": 0.5043117932679828,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "NAME_TYPE_SUITE",
+      "group": "application",
+      "auc": 0.5042668392385555,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_CREDIT_COUNT",
+      "group": "bureau",
+      "auc": 0.5041070131579719,
+      "direction": -1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_5_24M",
+      "group": "bureau_balance",
+      "auc": 0.5036633700133785,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_ACTIVE_CREDIT_SUM",
+      "group": "bureau",
+      "auc": 0.5033544613735821,
+      "direction": 1,
+      "coverage": 0.706168092094566,
+      "flagged": false
+    },
+    {
+      "feature": "WEEKDAY_APPR_PROCESS_START",
+      "group": "application",
+      "auc": 0.5033334516509886,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "NONLIVINGAPARTMENTS_AVG",
+      "group": "application",
+      "auc": 0.5033092503997352,
+      "direction": -1,
+      "coverage": 0.30600224382946895,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DAYS_SINCE_LAST_INSTALMENT",
+      "group": "installments",
+      "auc": 0.5031866376520777,
+      "direction": -1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_5_12M",
+      "group": "bureau_balance",
+      "auc": 0.5030634105184786,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_4_24M",
+      "group": "bureau_balance",
+      "auc": 0.5027779482554344,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "REG_REGION_NOT_WORK_REGION",
+      "group": "application",
+      "auc": 0.5027142123559399,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "EMERGENCYSTATE_MODE",
+      "group": "application",
+      "auc": 0.5026551582398688,
+      "direction": 1,
+      "coverage": 0.5261089070274138,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_3_24M",
+      "group": "bureau_balance",
+      "auc": 0.5026491805831,
+      "direction": 1,
+      "coverage": 0.2953684433026568,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_PROLONG_COUNT",
+      "group": "bureau",
+      "auc": 0.5026045536548274,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_OWN_REALTY",
+      "group": "application",
+      "auc": 0.5026003075662329,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_3_12M",
+      "group": "bureau_balance",
+      "auc": 0.5025355635220843,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "INST_UNPAID_COUNT",
+      "group": "installments",
+      "auc": 0.5025237260764142,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_5_6M",
+      "group": "bureau_balance",
+      "auc": 0.5025166569714566,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_4_12M",
+      "group": "bureau_balance",
+      "auc": 0.5024977194250475,
+      "direction": 1,
+      "coverage": 0.29242138467041723,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DPD30_COUNT_6M",
+      "group": "installments",
+      "auc": 0.5022233574389735,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_3_6M",
+      "group": "bureau_balance",
+      "auc": 0.5022104850522983,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_16",
+      "group": "application",
+      "auc": 0.5020539610978674,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "CREDIT_TO_INCOME",
+      "group": "application",
+      "auc": 0.5019227104367001,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BB_SHARE_4_6M",
+      "group": "bureau_balance",
+      "auc": 0.50185257157112,
+      "direction": 1,
+      "coverage": 0.28981171344021334,
+      "flagged": false
+    },
+    {
+      "feature": "NONLIVINGAPARTMENTS_MEDI",
+      "group": "application",
+      "auc": 0.5017422511933579,
+      "direction": -1,
+      "coverage": 0.30600224382946895,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_13",
+      "group": "application",
+      "auc": 0.5012095983058158,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_18",
+      "group": "application",
+      "auc": 0.5011946182308296,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "INST_DPD30_COUNT_3M",
+      "group": "installments",
+      "auc": 0.5011844907284332,
+      "direction": 1,
+      "coverage": 0.9484325712984943,
+      "flagged": false
+    },
+    {
+      "feature": "CC_BELOW_MINIMUM_SHARE",
+      "group": "credit_card",
+      "auc": 0.5010834081081315,
+      "direction": -1,
+      "coverage": 0.19310754121817178,
+      "flagged": false
+    },
+    {
+      "feature": "REG_REGION_NOT_LIVE_REGION",
+      "group": "application",
+      "auc": 0.5010600491535269,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "CC_DPD_MONTH_SHARE",
+      "group": "credit_card",
+      "auc": 0.5009774821950531,
+      "direction": -1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "LIVE_REGION_NOT_WORK_REGION",
+      "group": "application",
+      "auc": 0.5009666338690304,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_14",
+      "group": "application",
+      "auc": 0.5008656898054675,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "group": "application",
+      "auc": 0.5007733676927059,
+      "direction": 1,
+      "coverage": 0.864866183213554,
+      "flagged": false
+    },
+    {
+      "feature": "CC_CARD_COUNT",
+      "group": "credit_card",
+      "auc": 0.5006938880065439,
+      "direction": 1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "CC_MAX_DPD",
+      "group": "credit_card",
+      "auc": 0.5006347395871665,
+      "direction": -1,
+      "coverage": 0.2832550160970375,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_9",
+      "group": "application",
+      "auc": 0.5005326926243046,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_11",
+      "group": "application",
+      "auc": 0.5004593748649054,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_15",
+      "group": "application",
+      "auc": 0.5004331303435205,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_WEEK",
+      "group": "application",
+      "auc": 0.5003188583878587,
+      "direction": 1,
+      "coverage": 0.864866183213554,
+      "flagged": false
+    },
+    {
+      "feature": "NONLIVINGAPARTMENTS_MODE",
+      "group": "application",
+      "auc": 0.5002830129750383,
+      "direction": -1,
+      "coverage": 0.30600224382946895,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_EMAIL",
+      "group": "application",
+      "auc": 0.5002392488081979,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "group": "application",
+      "auc": 0.5001716821475652,
+      "direction": 1,
+      "coverage": 0.864866183213554,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_21",
+      "group": "application",
+      "auc": 0.5001539817226341,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "AMT_ANNUITY",
+      "group": "application",
+      "auc": 0.5001455031954438,
+      "direction": -1,
+      "coverage": 0.9999593509154174,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_CONT_MOBILE",
+      "group": "application",
+      "auc": 0.5001288063796097,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_17",
+      "group": "application",
+      "auc": 0.5001074802568044,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "BUREAU_BAD_DEBT_COUNT",
+      "group": "bureau",
+      "auc": 0.5000918990142499,
+      "direction": 1,
+      "coverage": 0.8567323013885727,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_5",
+      "group": "application",
+      "auc": 0.500086289506853,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_2",
+      "group": "application",
+      "auc": 0.5000578411688477,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_19",
+      "group": "application",
+      "auc": 0.500057769474672,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_20",
+      "group": "application",
+      "auc": 0.5000544893548042,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_4",
+      "group": "application",
+      "auc": 0.5000486407131612,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_7",
+      "group": "application",
+      "auc": 0.5000195417839088,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_10",
+      "group": "application",
+      "auc": 0.5000088437660293,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_MOBIL",
+      "group": "application",
+      "auc": 0.5000022109415073,
+      "direction": 1,
+      "coverage": 1.0,
+      "flagged": false
+    },
+    {
+      "feature": "FLAG_DOCUMENT_12",
+      "group": "application",
+      "auc": 0.5000022109415073,
+      "direction": -1,
+      "coverage": 1.0,
+      "flagged": false
+    }
+  ],
+  "flagged": []
+}

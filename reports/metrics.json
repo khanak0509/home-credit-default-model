@@ -1,0 +1,461 @@
+{
+  "holdout_rows": 61503,
+  "observed_rate": 0.08072776937710356,
+  "n_bootstrap": 1000,
+  "ece_bins": 10,
+  "target_bad_rates": [
+    0.03,
+    0.05,
+    0.08
+  ],
+  "best_tree_model": "lightgbm",
+  "models": {
+    "legacy": {
+      "label": "Legacy logistic baseline",
+      "calibration_method": "platt",
+      "metrics": {
+        "roc_auc": 0.7287529794414664,
+        "pr_auc": 0.21204446188571005,
+        "ks": 0.34210716659404755,
+        "gini": 0.4575059588829329,
+        "brier": 0.06938920082911336,
+        "log_loss": 0.2540106106281854,
+        "ece": 0.0021979196582685647,
+        "mean_predicted": 0.08047634730759859,
+        "observed_rate": 0.08072776937710356
+      },
+      "uncalibrated": {
+        "brier": 0.06938908249139786,
+        "log_loss": 0.2540094554424286,
+        "ece": 0.0021530550660789397,
+        "mean_predicted": 0.08045874536037445
+      },
+      "roc_auc_ci": [
+        0.7209364433256348,
+        0.7364396418737268
+      ],
+      "ks_ci": [
+        0.32855465165077863,
+        0.3573252201857386
+      ],
+      "gini_ci": [
+        0.44187288665126956,
+        0.4728792837474536
+      ],
+      "auc_diff_vs_legacy": 0.0,
+      "auc_diff_vs_legacy_ci": [
+        0.0,
+        0.0
+      ],
+      "auc_diff_share_below_zero": 1.0,
+      "approval": {
+        "0.03": {
+          "approval_rate": 0.419247841568704,
+          "threshold": 0.04988925904035568,
+          "realized_bad_rate": 0.029978669769245684
+        },
+        "0.05": {
+          "approval_rate": 0.7626294652293384,
+          "threshold": 0.10495637357234955,
+          "realized_bad_rate": 0.049995735971345726
+        },
+        "0.08": {
+          "approval_rate": 0.9984878786400664,
+          "threshold": 0.4716106355190277,
+          "realized_bad_rate": 0.07998697280573197
+        }
+      }
+    },
+    "scorecard": {
+      "label": "WoE scorecard",
+      "calibration_method": "isotonic",
+      "metrics": {
+        "roc_auc": 0.7580760323858862,
+        "pr_auc": 0.23878480613630082,
+        "ks": 0.3896309505603215,
+        "gini": 0.5161520647717723,
+        "brier": 0.06798959953616505,
+        "log_loss": 0.24648692133647193,
+        "ece": 0.0036548657945587974,
+        "mean_predicted": 0.08010696948566656,
+        "observed_rate": 0.08072776937710356
+      },
+      "uncalibrated": {
+        "brier": 0.06796022275940826,
+        "log_loss": 0.2464107632710151,
+        "ece": 0.0026666662214687247,
+        "mean_predicted": 0.08013371378375482
+      },
+      "roc_auc_ci": [
+        0.7504284381516169,
+        0.7656100715567408
+      ],
+      "ks_ci": [
+        0.3773389875004553,
+        0.40539303889385514
+      ],
+      "gini_ci": [
+        0.5008568763032337,
+        0.5312201431134815
+      ],
+      "auc_diff_vs_legacy": 0.029287897133627915,
+      "auc_diff_vs_legacy_ci": [
+        0.02522558224833674,
+        0.03355874179439171
+      ],
+      "auc_diff_share_below_zero": 0.0,
+      "approval": {
+        "0.03": {
+          "approval_rate": 0.5333723558200413,
+          "threshold": 0.05764082618065251,
+          "realized_bad_rate": 0.02999634190952323
+        },
+        "0.05": {
+          "approval_rate": 0.8140090727281596,
+          "threshold": 0.12847809054728626,
+          "realized_bad_rate": 0.049996005113454776
+        },
+        "0.08": {
+          "approval_rate": 0.9985366567484513,
+          "threshold": 0.5058101079080255,
+          "realized_bad_rate": 0.07999934867210526
+        }
+      }
+    },
+    "xgboost": {
+      "label": "XGBoost",
+      "calibration_method": "platt",
+      "metrics": {
+        "roc_auc": 0.7946881023651464,
+        "pr_auc": 0.29927424895303634,
+        "ks": 0.4465357256713368,
+        "gini": 0.5893762047302928,
+        "brier": 0.06502770576502861,
+        "log_loss": 0.23372352559926135,
+        "ece": 0.003220152759644813,
+        "mean_predicted": 0.0798569882053086,
+        "observed_rate": 0.08072776937710356
+      },
+      "uncalibrated": {
+        "brier": 0.06503506004810333,
+        "log_loss": 0.23373837769031525,
+        "ece": 0.0032128434261007,
+        "mean_predicted": 0.07861685752868652
+      },
+      "roc_auc_ci": [
+        0.7880051292452167,
+        0.8011945819112657
+      ],
+      "ks_ci": [
+        0.4349303674367094,
+        0.46084940757260934
+      ],
+      "gini_ci": [
+        0.5760102584904334,
+        0.6023891638225314
+      ],
+      "auc_diff_vs_legacy": 0.06597617718603732,
+      "auc_diff_vs_legacy_ci": [
+        0.0607633338602635,
+        0.07094553746630082
+      ],
+      "auc_diff_share_below_zero": 0.0,
+      "approval": {
+        "0.03": {
+          "approval_rate": 0.637383542266231,
+          "threshold": 0.06639107316732407,
+          "realized_bad_rate": 0.02999923471340017
+        },
+        "0.05": {
+          "approval_rate": 0.8684291823163097,
+          "threshold": 0.15859636664390564,
+          "realized_bad_rate": 0.04998970249574058
+        },
+        "0.08": {
+          "approval_rate": 0.9989919190933776,
+          "threshold": 0.6621320247650146,
+          "realized_bad_rate": 0.0799954427825068
+        }
+      }
+    },
+    "lightgbm": {
+      "label": "LightGBM",
+      "calibration_method": "platt",
+      "metrics": {
+        "roc_auc": 0.7945699524532636,
+        "pr_auc": 0.299572634820359,
+        "ks": 0.4448584215583583,
+        "gini": 0.5891399049065271,
+        "brier": 0.06503841699456735,
+        "log_loss": 0.23375479022169654,
+        "ece": 0.0030347556976699133,
+        "mean_predicted": 0.07987136294052612,
+        "observed_rate": 0.08072776937710356
+      },
+      "uncalibrated": {
+        "brier": 0.06504266433001257,
+        "log_loss": 0.23375789031338173,
+        "ece": 0.002859430975800345,
+        "mean_predicted": 0.07892254411976073
+      },
+      "roc_auc_ci": [
+        0.7879822629378941,
+        0.8010515268283742
+      ],
+      "ks_ci": [
+        0.4339000296136403,
+        0.458875482129415
+      ],
+      "gini_ci": [
+        0.5759645258757882,
+        0.6021030536567484
+      ],
+      "auc_diff_vs_legacy": 0.06586758594144379,
+      "auc_diff_vs_legacy_ci": [
+        0.060609461193211686,
+        0.07077545774238005
+      ],
+      "auc_diff_share_below_zero": 0.0,
+      "approval": {
+        "0.03": {
+          "approval_rate": 0.6393021478627059,
+          "threshold": 0.06719655661007551,
+          "realized_bad_rate": 0.029985503191841095
+        },
+        "0.05": {
+          "approval_rate": 0.8688031478139278,
+          "threshold": 0.1586266093160834,
+          "realized_bad_rate": 0.04998689972676573
+        },
+        "0.08": {
+          "approval_rate": 0.9990244378323009,
+          "threshold": 0.6823488670004324,
+          "realized_bad_rate": 0.07999283889133017
+        }
+      }
+    },
+    "lightgbm_monotone": {
+      "label": "LightGBM monotonic",
+      "calibration_method": "isotonic",
+      "metrics": {
+        "roc_auc": 0.7939849988869343,
+        "pr_auc": 0.29835815310837865,
+        "ks": 0.4437347968732416,
+        "gini": 0.5879699977738686,
+        "brier": 0.0650768450239093,
+        "log_loss": 0.23395868134914874,
+        "ece": 0.0029769773215069855,
+        "mean_predicted": 0.07995271519665681,
+        "observed_rate": 0.08072776937710356
+      },
+      "uncalibrated": {
+        "brier": 0.06509823902378957,
+        "log_loss": 0.23398917081408724,
+        "ece": 0.0024933592549091625,
+        "mean_predicted": 0.07913362341681612
+      },
+      "roc_auc_ci": [
+        0.787273665730799,
+        0.8005544421665742
+      ],
+      "ks_ci": [
+        0.4319962527232025,
+        0.45748100991956325
+      ],
+      "gini_ci": [
+        0.5745473314615981,
+        0.6011088843331485
+      ],
+      "auc_diff_vs_legacy": 0.06526019393691829,
+      "auc_diff_vs_legacy_ci": [
+        0.06012569373303539,
+        0.06999747820511118
+      ],
+      "auc_diff_share_below_zero": 0.0,
+      "approval": {
+        "0.03": {
+          "approval_rate": 0.6396761133603239,
+          "threshold": 0.0664450099308168,
+          "realized_bad_rate": 0.02999339128666565
+        },
+        "0.05": {
+          "approval_rate": 0.8677300294294588,
+          "threshold": 0.158373968999355,
+          "realized_bad_rate": 0.04999250487183331
+        },
+        "0.08": {
+          "approval_rate": 0.9990081784628392,
+          "threshold": 0.6981016497531697,
+          "realized_bad_rate": 0.07999414081572866
+        }
+      }
+    }
+  },
+  "cost": {
+    "lgd_0.3": {
+      "legacy": {
+        "cost_ratio": 2.9999999999999996,
+        "loss_given_default": 0.3,
+        "best_profit_per_applicant": 0.06871046940799636,
+        "best_approval_rate": 0.960392175991415,
+        "break_even_pd": 0.25,
+        "policy_profit_per_applicant": 0.06866494317350373,
+        "policy_approval_rate": 0.9665056989089963,
+        "approve_all_profit_per_applicant": 0.06770889224915858
+      },
+      "scorecard": {
+        "cost_ratio": 2.9999999999999996,
+        "loss_given_default": 0.3,
+        "best_profit_per_applicant": 0.06927629546526186,
+        "best_approval_rate": 0.934117034941385,
+        "break_even_pd": 0.25,
+        "policy_profit_per_applicant": 0.06917711331154579,
+        "policy_approval_rate": 0.9545875810936052,
+        "approve_all_profit_per_applicant": 0.06770889224915858
+      },
+      "xgboost": {
+        "cost_ratio": 2.9999999999999996,
+        "loss_given_default": 0.3,
+        "best_profit_per_applicant": 0.07078353901435704,
+        "best_approval_rate": 0.9397590361445783,
+        "break_even_pd": 0.25,
+        "policy_profit_per_applicant": 0.07075102027543373,
+        "policy_approval_rate": 0.9390436238882656,
+        "approve_all_profit_per_applicant": 0.06770889224915858
+      },
+      "lightgbm": {
+        "cost_ratio": 2.9999999999999996,
+        "loss_given_default": 0.3,
+        "best_profit_per_applicant": 0.07082093556411882,
+        "best_approval_rate": 0.9329788790790693,
+        "break_even_pd": 0.25,
+        "policy_profit_per_applicant": 0.07072663122124125,
+        "policy_approval_rate": 0.9397102580361933,
+        "approve_all_profit_per_applicant": 0.06770889224915858
+      },
+      "lightgbm_monotone": {
+        "cost_ratio": 2.9999999999999996,
+        "loss_given_default": 0.3,
+        "best_profit_per_applicant": 0.07077215745573388,
+        "best_approval_rate": 0.935287709542624,
+        "break_even_pd": 0.25,
+        "policy_profit_per_applicant": 0.07073313496902592,
+        "policy_approval_rate": 0.9380843210900282,
+        "approve_all_profit_per_applicant": 0.06770889224915858
+      }
+    },
+    "lgd_0.6": {
+      "legacy": {
+        "cost_ratio": 5.999999999999999,
+        "loss_given_default": 0.6,
+        "best_profit_per_applicant": 0.05104629042485734,
+        "best_approval_rate": 0.8512267694258817,
+        "break_even_pd": 0.14285714285714288,
+        "policy_profit_per_applicant": 0.0508983301627563,
+        "policy_approval_rate": 0.8626083280490383,
+        "approve_all_profit_per_applicant": 0.04349056143602752
+      },
+      "scorecard": {
+        "cost_ratio": 5.999999999999999,
+        "loss_given_default": 0.6,
+        "best_profit_per_applicant": 0.0531843975090646,
+        "best_approval_rate": 0.82867502398257,
+        "break_even_pd": 0.14285714285714288,
+        "policy_profit_per_applicant": 0.05298765913857861,
+        "policy_approval_rate": 0.855844430352991,
+        "approve_all_profit_per_applicant": 0.04349056143602752
+      },
+      "xgboost": {
+        "cost_ratio": 5.999999999999999,
+        "loss_given_default": 0.6,
+        "best_profit_per_applicant": 0.056924052485244625,
+        "best_approval_rate": 0.804497341593093,
+        "break_even_pd": 0.14285714285714288,
+        "policy_profit_per_applicant": 0.05667691006942751,
+        "policy_approval_rate": 0.843682421995675,
+        "approve_all_profit_per_applicant": 0.04349056143602752
+      },
+      "lightgbm": {
+        "cost_ratio": 5.999999999999999,
+        "loss_given_default": 0.6,
+        "best_profit_per_applicant": 0.05688177812464434,
+        "best_approval_rate": 0.8251304814399297,
+        "break_even_pd": 0.14285714285714288,
+        "policy_profit_per_applicant": 0.05671918443002781,
+        "policy_approval_rate": 0.8447880591190674,
+        "approve_all_profit_per_applicant": 0.04349056143602752
+      },
+      "lightgbm_monotone": {
+        "cost_ratio": 5.999999999999999,
+        "loss_given_default": 0.6,
+        "best_profit_per_applicant": 0.05702160870201454,
+        "best_approval_rate": 0.8260735248687056,
+        "break_even_pd": 0.14285714285714288,
+        "policy_profit_per_applicant": 0.056966326845844927,
+        "policy_approval_rate": 0.827227940100483,
+        "approve_all_profit_per_applicant": 0.04349056143602752
+      }
+    },
+    "lgd_0.9": {
+      "legacy": {
+        "cost_ratio": 9.0,
+        "loss_given_default": 0.9,
+        "best_profit_per_applicant": 0.03838186755117637,
+        "best_approval_rate": 0.7374599613027006,
+        "break_even_pd": 0.1,
+        "policy_profit_per_applicant": 0.0381932588654212,
+        "policy_approval_rate": 0.7432157780921256,
+        "approve_all_profit_per_applicant": 0.019272230622896448
+      },
+      "scorecard": {
+        "cost_ratio": 9.0,
+        "loss_given_default": 0.9,
+        "best_profit_per_applicant": 0.042458091475212595,
+        "best_approval_rate": 0.7395249012243306,
+        "break_even_pd": 0.1,
+        "policy_profit_per_applicant": 0.042150789392387374,
+        "policy_approval_rate": 0.7105994829520511,
+        "approve_all_profit_per_applicant": 0.019272230622896448
+      },
+      "xgboost": {
+        "cost_ratio": 9.0,
+        "loss_given_default": 0.9,
+        "best_profit_per_applicant": 0.04739443604377023,
+        "best_approval_rate": 0.779620506316765,
+        "break_even_pd": 0.1,
+        "policy_profit_per_applicant": 0.04708225615010649,
+        "policy_approval_rate": 0.7560119018584459,
+        "approve_all_profit_per_applicant": 0.019272230622896448
+      },
+      "lightgbm": {
+        "cost_ratio": 9.0,
+        "loss_given_default": 0.9,
+        "best_profit_per_applicant": 0.04738305448514706,
+        "best_approval_rate": 0.7749540672812708,
+        "break_even_pd": 0.1,
+        "policy_profit_per_applicant": 0.04723021641220754,
+        "policy_approval_rate": 0.7560281612279076,
+        "approve_all_profit_per_applicant": 0.019272230622896448
+      },
+      "lightgbm_monotone": {
+        "cost_ratio": 9.0,
+        "loss_given_default": 0.9,
+        "best_profit_per_applicant": 0.04715054550184544,
+        "best_approval_rate": 0.7700274783343902,
+        "break_even_pd": 0.1,
+        "policy_profit_per_applicant": 0.04703510397866771,
+        "policy_approval_rate": 0.7644830333479667,
+        "approve_all_profit_per_applicant": 0.019272230622896448
+      }
+    }
+  },
+  "cost_assumptions": {
+    "margin_per_good_loan": 0.1,
+    "loss_given_default": [
+      0.3,
+      0.6,
+      0.9
+    ],
+    "illustrative": true
+  }
+}

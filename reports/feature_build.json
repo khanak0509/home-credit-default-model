@@ -1,0 +1,54 @@
+{
+  "leakage_filter": {
+    "installments_payments": {
+      "raw_rows": 13605401,
+      "kept_rows": 13605401,
+      "dropped_rows": 0,
+      "dropped_future_offset": 0
+    },
+    "bureau": {
+      "raw_rows": 1716428,
+      "kept_rows": 1716411,
+      "dropped_rows": 17,
+      "dropped_future_offset": 17
+    },
+    "bureau_balance": {
+      "raw_rows": 27299925,
+      "kept_rows": 24179639,
+      "dropped_rows": 3120286,
+      "dropped_future_offset": 0,
+      "dropped_no_bureau_record": 3120184,
+      "dropped_parent_filtered": 102
+    },
+    "previous_application": {
+      "raw_rows": 1670214,
+      "kept_rows": 1670214,
+      "dropped_rows": 0,
+      "dropped_future_offset": 0,
+      "masked_planned_dates": 224392,
+      "masked_sentinel_dates": 997144
+    },
+    "pos_cash_balance": {
+      "raw_rows": 10001358,
+      "kept_rows": 10001358,
+      "dropped_rows": 0,
+      "dropped_future_offset": 0
+    },
+    "credit_card_balance": {
+      "raw_rows": 3840312,
+      "kept_rows": 3840312,
+      "dropped_rows": 0,
+      "dropped_future_offset": 0
+    }
+  },
+  "feature_counts": {
+    "application": 138,
+    "installments": 44,
+    "bureau": 20,
+    "bureau_balance": 29,
+    "previous_application": 24,
+    "pos_cash": 14,
+    "credit_card": 18
+  },
+  "rows": 307511
+}

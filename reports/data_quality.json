@@ -1,0 +1,3724 @@
+{
+  "tables": {
+    "application_train": {
+      "rows": 307511,
+      "columns": {
+        "SK_ID_CURR": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 310771,
+          "top_value_share": 3.2519161916159095e-06,
+          "constant": false,
+          "near_constant": false
+        },
+        "TARGET": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9192711805431351,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_CONTRACT_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9047871458256778,
+          "constant": false,
+          "near_constant": false
+        },
+        "CODE_GENDER": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3,
+          "top_value_share": 0.6583439291602576,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_OWN_CAR": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.6598918412674668,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_OWN_REALTY": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.6936727466659729,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_CHILDREN": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 15,
+          "top_value_share": 0.7003684421045101,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_INCOME_TOTAL": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2548,
+          "top_value_share": 0.11625600385026877,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 5539,
+          "top_value_share": 0.031572854304398865,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_ANNUITY": {
+          "dtype": "DOUBLE",
+          "missing": 12,
+          "missing_rate": 3.9022994299390916e-05,
+          "distinct": 13382,
+          "top_value_share": 0.020763484883467583,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_GOODS_PRICE": {
+          "dtype": "DOUBLE",
+          "missing": 278,
+          "missing_rate": 0.0009040327012692228,
+          "distinct": 994,
+          "top_value_share": 0.0846213631382292,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_TYPE_SUITE": {
+          "dtype": "VARCHAR",
+          "missing": 1292,
+          "missing_rate": 0.004201475719567756,
+          "distinct": 7,
+          "top_value_share": 0.8081857234375356,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_INCOME_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 8,
+          "top_value_share": 0.5163197414076245,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_EDUCATION_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 5,
+          "top_value_share": 0.7101892290031901,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_FAMILY_STATUS": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 6,
+          "top_value_share": 0.6387804013514964,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_HOUSING_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 6,
+          "top_value_share": 0.8873438673738501,
+          "constant": false,
+          "near_constant": false
+        },
+        "REGION_POPULATION_RELATIVE": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 84,
+          "top_value_share": 0.05335744087203385,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_BIRTH": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 17814,
+          "top_value_share": 0.00013983239623948412,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_EMPLOYED": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 12855,
+          "top_value_share": 0.18007160719453938,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_REGISTRATION": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 14481,
+          "top_value_share": 0.0003674665296525978,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_ID_PUBLISH": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 6194,
+          "top_value_share": 0.0005495738363830887,
+          "constant": false,
+          "near_constant": false
+        },
+        "OWN_CAR_AGE": {
+          "dtype": "DOUBLE",
+          "missing": 202929,
+          "missing_rate": 0.6599081008484249,
+          "distinct": 62,
+          "top_value_share": 0.6599081008484249,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_MOBIL": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9999967480838083,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_EMP_PHONE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.8198893698111612,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_WORK_PHONE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.8006315221244118,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_CONT_MOBILE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9981334001060125,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_PHONE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.7189336316424453,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_EMAIL": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9432800777858353,
+          "constant": false,
+          "near_constant": false
+        },
+        "OCCUPATION_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 96391,
+          "missing_rate": 0.31345545362604915,
+          "distinct": 18,
+          "top_value_share": 0.31345545362604915,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_FAM_MEMBERS": {
+          "dtype": "DOUBLE",
+          "missing": 2,
+          "missing_rate": 6.503832383231819e-06,
+          "distinct": 16,
+          "top_value_share": 0.5149636923557206,
+          "constant": false,
+          "near_constant": false
+        },
+        "REGION_RATING_CLIENT": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3,
+          "top_value_share": 0.7381329448377456,
+          "constant": false,
+          "near_constant": false
+        },
+        "REGION_RATING_CLIENT_W_CITY": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3,
+          "top_value_share": 0.7462627353167854,
+          "constant": false,
+          "near_constant": false
+        },
+        "WEEKDAY_APPR_PROCESS_START": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 7,
+          "top_value_share": 0.17528153464428914,
+          "constant": false,
+          "near_constant": false
+        },
+        "HOUR_APPR_PROCESS_START": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 24,
+          "top_value_share": 0.12266878258013535,
+          "constant": false,
+          "near_constant": false
+        },
+        "REG_REGION_NOT_LIVE_REGION": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9848558262956447,
+          "constant": false,
+          "near_constant": false
+        },
+        "REG_REGION_NOT_WORK_REGION": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9492310844164924,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVE_REGION_NOT_WORK_REGION": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9593412918562263,
+          "constant": false,
+          "near_constant": false
+        },
+        "REG_CITY_NOT_LIVE_CITY": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9218271866697452,
+          "constant": false,
+          "near_constant": false
+        },
+        "REG_CITY_NOT_WORK_CITY": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.7695464552487553,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVE_CITY_NOT_WORK_CITY": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.8204454474799275,
+          "constant": false,
+          "near_constant": false
+        },
+        "ORGANIZATION_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 58,
+          "top_value_share": 0.22110428570034893,
+          "constant": false,
+          "near_constant": false
+        },
+        "EXT_SOURCE_1": {
+          "dtype": "DOUBLE",
+          "missing": 173378,
+          "missing_rate": 0.5638107254699832,
+          "distinct": 114701,
+          "top_value_share": 0.5638107254699832,
+          "constant": false,
+          "near_constant": false
+        },
+        "EXT_SOURCE_2": {
+          "dtype": "DOUBLE",
+          "missing": 660,
+          "missing_rate": 0.0021462646864665006,
+          "distinct": 120013,
+          "top_value_share": 0.002344631574155071,
+          "constant": false,
+          "near_constant": false
+        },
+        "EXT_SOURCE_3": {
+          "dtype": "DOUBLE",
+          "missing": 60965,
+          "missing_rate": 0.19825307062186392,
+          "distinct": 843,
+          "top_value_share": 0.19825307062186392,
+          "constant": false,
+          "near_constant": false
+        },
+        "APARTMENTS_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 156061,
+          "missing_rate": 0.5074972927797705,
+          "distinct": 2376,
+          "top_value_share": 0.5074972927797705,
+          "constant": false,
+          "near_constant": false
+        },
+        "BASEMENTAREA_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 179943,
+          "missing_rate": 0.5851595552679416,
+          "distinct": 3769,
+          "top_value_share": 0.5851595552679416,
+          "constant": false,
+          "near_constant": false
+        },
+        "YEARS_BEGINEXPLUATATION_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 150007,
+          "missing_rate": 0.48781019215572774,
+          "distinct": 278,
+          "top_value_share": 0.48781019215572774,
+          "constant": false,
+          "near_constant": false
+        },
+        "YEARS_BUILD_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 204488,
+          "missing_rate": 0.6649778381911542,
+          "distinct": 149,
+          "top_value_share": 0.6649778381911542,
+          "constant": false,
+          "near_constant": false
+        },
+        "COMMONAREA_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 214865,
+          "missing_rate": 0.6987229725115525,
+          "distinct": 3229,
+          "top_value_share": 0.6987229725115525,
+          "constant": false,
+          "near_constant": false
+        },
+        "ELEVATORS_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 163891,
+          "missing_rate": 0.532959796560123,
+          "distinct": 249,
+          "top_value_share": 0.532959796560123,
+          "constant": false,
+          "near_constant": false
+        },
+        "ENTRANCES_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 154828,
+          "missing_rate": 0.503487680115508,
+          "distinct": 300,
+          "top_value_share": 0.503487680115508,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLOORSMAX_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 153020,
+          "missing_rate": 0.4976082156410665,
+          "distinct": 398,
+          "top_value_share": 0.4976082156410665,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLOORSMIN_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 208642,
+          "missing_rate": 0.6784862980511266,
+          "distinct": 320,
+          "top_value_share": 0.6784862980511266,
+          "constant": false,
+          "near_constant": false
+        },
+        "LANDAREA_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 182590,
+          "missing_rate": 0.5937673774271489,
+          "distinct": 3503,
+          "top_value_share": 0.5937673774271489,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVINGAPARTMENTS_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 210199,
+          "missing_rate": 0.6835495315614726,
+          "distinct": 1894,
+          "top_value_share": 0.6835495315614726,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVINGAREA_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 154350,
+          "missing_rate": 0.5019332641759157,
+          "distinct": 5153,
+          "top_value_share": 0.5019332641759157,
+          "constant": false,
+          "near_constant": false
+        },
+        "NONLIVINGAPARTMENTS_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 213514,
+          "missing_rate": 0.6943296337366793,
+          "distinct": 397,
+          "top_value_share": 0.6943296337366793,
+          "constant": false,
+          "near_constant": false
+        },
+        "NONLIVINGAREA_AVG": {
+          "dtype": "DOUBLE",
+          "missing": 169682,
+          "missing_rate": 0.5517916432257708,
+          "distinct": 3228,
+          "top_value_share": 0.5517916432257708,
+          "constant": false,
+          "near_constant": false
+        },
+        "APARTMENTS_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 156061,
+          "missing_rate": 0.5074972927797705,
+          "distinct": 760,
+          "top_value_share": 0.5074972927797705,
+          "constant": false,
+          "near_constant": false
+        },
+        "BASEMENTAREA_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 179943,
+          "missing_rate": 0.5851595552679416,
+          "distinct": 3633,
+          "top_value_share": 0.5851595552679416,
+          "constant": false,
+          "near_constant": false
+        },
+        "YEARS_BEGINEXPLUATATION_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 150007,
+          "missing_rate": 0.48781019215572774,
+          "distinct": 227,
+          "top_value_share": 0.48781019215572774,
+          "constant": false,
+          "near_constant": false
+        },
+        "YEARS_BUILD_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 204488,
+          "missing_rate": 0.6649778381911542,
+          "distinct": 154,
+          "top_value_share": 0.6649778381911542,
+          "constant": false,
+          "near_constant": false
+        },
+        "COMMONAREA_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 214865,
+          "missing_rate": 0.6987229725115525,
+          "distinct": 3138,
+          "top_value_share": 0.6987229725115525,
+          "constant": false,
+          "near_constant": false
+        },
+        "ELEVATORS_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 163891,
+          "missing_rate": 0.532959796560123,
+          "distinct": 26,
+          "top_value_share": 0.532959796560123,
+          "constant": false,
+          "near_constant": false
+        },
+        "ENTRANCES_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 154828,
+          "missing_rate": 0.503487680115508,
+          "distinct": 29,
+          "top_value_share": 0.503487680115508,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLOORSMAX_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 153020,
+          "missing_rate": 0.4976082156410665,
+          "distinct": 25,
+          "top_value_share": 0.4976082156410665,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLOORSMIN_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 208642,
+          "missing_rate": 0.6784862980511266,
+          "distinct": 25,
+          "top_value_share": 0.6784862980511266,
+          "constant": false,
+          "near_constant": false
+        },
+        "LANDAREA_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 182590,
+          "missing_rate": 0.5937673774271489,
+          "distinct": 3522,
+          "top_value_share": 0.5937673774271489,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVINGAPARTMENTS_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 210199,
+          "missing_rate": 0.6835495315614726,
+          "distinct": 708,
+          "top_value_share": 0.6835495315614726,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVINGAREA_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 154350,
+          "missing_rate": 0.5019332641759157,
+          "distinct": 5178,
+          "top_value_share": 0.5019332641759157,
+          "constant": false,
+          "near_constant": false
+        },
+        "NONLIVINGAPARTMENTS_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 213514,
+          "missing_rate": 0.6943296337366793,
+          "distinct": 163,
+          "top_value_share": 0.6943296337366793,
+          "constant": false,
+          "near_constant": false
+        },
+        "NONLIVINGAREA_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 169682,
+          "missing_rate": 0.5517916432257708,
+          "distinct": 3359,
+          "top_value_share": 0.5517916432257708,
+          "constant": false,
+          "near_constant": false
+        },
+        "APARTMENTS_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 156061,
+          "missing_rate": 0.5074972927797705,
+          "distinct": 1170,
+          "top_value_share": 0.5074972927797705,
+          "constant": false,
+          "near_constant": false
+        },
+        "BASEMENTAREA_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 179943,
+          "missing_rate": 0.5851595552679416,
+          "distinct": 3745,
+          "top_value_share": 0.5851595552679416,
+          "constant": false,
+          "near_constant": false
+        },
+        "YEARS_BEGINEXPLUATATION_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 150007,
+          "missing_rate": 0.48781019215572774,
+          "distinct": 242,
+          "top_value_share": 0.48781019215572774,
+          "constant": false,
+          "near_constant": false
+        },
+        "YEARS_BUILD_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 204488,
+          "missing_rate": 0.6649778381911542,
+          "distinct": 149,
+          "top_value_share": 0.6649778381911542,
+          "constant": false,
+          "near_constant": false
+        },
+        "COMMONAREA_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 214865,
+          "missing_rate": 0.6987229725115525,
+          "distinct": 3275,
+          "top_value_share": 0.6987229725115525,
+          "constant": false,
+          "near_constant": false
+        },
+        "ELEVATORS_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 163891,
+          "missing_rate": 0.532959796560123,
+          "distinct": 43,
+          "top_value_share": 0.532959796560123,
+          "constant": false,
+          "near_constant": false
+        },
+        "ENTRANCES_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 154828,
+          "missing_rate": 0.503487680115508,
+          "distinct": 45,
+          "top_value_share": 0.503487680115508,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLOORSMAX_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 153020,
+          "missing_rate": 0.4976082156410665,
+          "distinct": 50,
+          "top_value_share": 0.4976082156410665,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLOORSMIN_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 208642,
+          "missing_rate": 0.6784862980511266,
+          "distinct": 48,
+          "top_value_share": 0.6784862980511266,
+          "constant": false,
+          "near_constant": false
+        },
+        "LANDAREA_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 182590,
+          "missing_rate": 0.5937673774271489,
+          "distinct": 3641,
+          "top_value_share": 0.5937673774271489,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVINGAPARTMENTS_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 210199,
+          "missing_rate": 0.6835495315614726,
+          "distinct": 1106,
+          "top_value_share": 0.6835495315614726,
+          "constant": false,
+          "near_constant": false
+        },
+        "LIVINGAREA_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 154350,
+          "missing_rate": 0.5019332641759157,
+          "distinct": 5097,
+          "top_value_share": 0.5019332641759157,
+          "constant": false,
+          "near_constant": false
+        },
+        "NONLIVINGAPARTMENTS_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 213514,
+          "missing_rate": 0.6943296337366793,
+          "distinct": 219,
+          "top_value_share": 0.6943296337366793,
+          "constant": false,
+          "near_constant": false
+        },
+        "NONLIVINGAREA_MEDI": {
+          "dtype": "DOUBLE",
+          "missing": 169682,
+          "missing_rate": 0.5517916432257708,
+          "distinct": 3326,
+          "top_value_share": 0.5517916432257708,
+          "constant": false,
+          "near_constant": false
+        },
+        "FONDKAPREMONT_MODE": {
+          "dtype": "VARCHAR",
+          "missing": 210295,
+          "missing_rate": 0.6838617155158677,
+          "distinct": 4,
+          "top_value_share": 0.6838617155158677,
+          "constant": false,
+          "near_constant": false
+        },
+        "HOUSETYPE_MODE": {
+          "dtype": "VARCHAR",
+          "missing": 154297,
+          "missing_rate": 0.50176091261776,
+          "distinct": 3,
+          "top_value_share": 0.50176091261776,
+          "constant": false,
+          "near_constant": false
+        },
+        "TOTALAREA_MODE": {
+          "dtype": "DOUBLE",
+          "missing": 148431,
+          "missing_rate": 0.4826851722377411,
+          "distinct": 4980,
+          "top_value_share": 0.4826851722377411,
+          "constant": false,
+          "near_constant": false
+        },
+        "WALLSMATERIAL_MODE": {
+          "dtype": "VARCHAR",
+          "missing": 156341,
+          "missing_rate": 0.508407829313423,
+          "distinct": 7,
+          "top_value_share": 0.508407829313423,
+          "constant": false,
+          "near_constant": false
+        },
+        "EMERGENCYSTATE_MODE": {
+          "dtype": "BOOLEAN",
+          "missing": 145755,
+          "missing_rate": 0.47398304450897694,
+          "distinct": 2,
+          "top_value_share": 0.5184464945969413,
+          "constant": false,
+          "near_constant": false
+        },
+        "OBS_30_CNT_SOCIAL_CIRCLE": {
+          "dtype": "DOUBLE",
+          "missing": 1021,
+          "missing_rate": 0.0033202064316398437,
+          "distinct": 33,
+          "top_value_share": 0.5330215829677638,
+          "constant": false,
+          "near_constant": false
+        },
+        "DEF_30_CNT_SOCIAL_CIRCLE": {
+          "dtype": "DOUBLE",
+          "missing": 1021,
+          "missing_rate": 0.0033202064316398437,
+          "distinct": 10,
+          "top_value_share": 0.8823229087739951,
+          "constant": false,
+          "near_constant": false
+        },
+        "OBS_60_CNT_SOCIAL_CIRCLE": {
+          "dtype": "DOUBLE",
+          "missing": 1021,
+          "missing_rate": 0.0033202064316398437,
+          "distinct": 33,
+          "top_value_share": 0.5354800316086253,
+          "constant": false,
+          "near_constant": false
+        },
+        "DEF_60_CNT_SOCIAL_CIRCLE": {
+          "dtype": "DOUBLE",
+          "missing": 1021,
+          "missing_rate": 0.0033202064316398437,
+          "distinct": 9,
+          "top_value_share": 0.9128811652266098,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_LAST_PHONE_CHANGE": {
+          "dtype": "DOUBLE",
+          "missing": 1,
+          "missing_rate": 3.2519161916159095e-06,
+          "distinct": 3656,
+          "top_value_share": 0.12250618677055455,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_DOCUMENT_2": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.999957725089509,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_3": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.7100233812774177,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_DOCUMENT_4": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9999187020952096,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_5": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9848850935413692,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_DOCUMENT_6": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9119446133634244,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_DOCUMENT_7": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9998081369446946,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_8": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9186240492210035,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_DOCUMENT_9": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9961042044024442,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_10": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9999772365866587,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_11": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9960879448214861,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_12": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9999934961676168,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_13": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9964749228482883,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_14": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9970635196789709,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_15": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9987902871767189,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_16": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9900718998669966,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_17": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9997333428722875,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_18": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9918702095209603,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_19": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9994048993369343,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_20": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9994927010741079,
+          "constant": false,
+          "near_constant": true
+        },
+        "FLAG_DOCUMENT_21": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9996650526322636,
+          "constant": false,
+          "near_constant": true
+        },
+        "AMT_REQ_CREDIT_BUREAU_HOUR": {
+          "dtype": "DOUBLE",
+          "missing": 41519,
+          "missing_rate": 0.13501630835970097,
+          "distinct": 5,
+          "top_value_share": 0.8596960759127316,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_REQ_CREDIT_BUREAU_DAY": {
+          "dtype": "DOUBLE",
+          "missing": 41519,
+          "missing_rate": 0.13501630835970097,
+          "distinct": 9,
+          "top_value_share": 0.860141588430983,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_REQ_CREDIT_BUREAU_WEEK": {
+          "dtype": "DOUBLE",
+          "missing": 41519,
+          "missing_rate": 0.13501630835970097,
+          "distinct": 9,
+          "top_value_share": 0.8372253350286657,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_REQ_CREDIT_BUREAU_MON": {
+          "dtype": "DOUBLE",
+          "missing": 41519,
+          "missing_rate": 0.13501630835970097,
+          "distinct": 23,
+          "top_value_share": 0.7226830910113785,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_REQ_CREDIT_BUREAU_QRT": {
+          "dtype": "DOUBLE",
+          "missing": 41519,
+          "missing_rate": 0.13501630835970097,
+          "distinct": 11,
+          "top_value_share": 0.7005180302493245,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_REQ_CREDIT_BUREAU_YEAR": {
+          "dtype": "DOUBLE",
+          "missing": 41519,
+          "missing_rate": 0.13501630835970097,
+          "distinct": 24,
+          "top_value_share": 0.23349083447421393,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "CNT_CHILDREN": {
+          "q1": 0.0,
+          "q3": 1.0,
+          "iqr": 1.0,
+          "lower_fence": -1.5,
+          "upper_fence": 2.5,
+          "min": 0,
+          "max": 19,
+          "outliers": 4272,
+          "outlier_rate": 0.013892185970583166
+        },
+        "AMT_INCOME_TOTAL": {
+          "q1": 112500.0,
+          "q3": 202500.0,
+          "iqr": 90000.0,
+          "lower_fence": -22500.0,
+          "upper_fence": 337500.0,
+          "min": 25650.0,
+          "max": 117000000.0,
+          "outliers": 14035,
+          "outlier_rate": 0.045640643749329295
+        },
+        "AMT_CREDIT": {
+          "q1": 270000.0,
+          "q3": 808650.0,
+          "iqr": 538650.0,
+          "lower_fence": -537975.0,
+          "upper_fence": 1616625.0,
+          "min": 45000.0,
+          "max": 4050000.0,
+          "outliers": 6562,
+          "outlier_rate": 0.0213390740493836
+        },
+        "AMT_ANNUITY": {
+          "q1": 16524.0,
+          "q3": 34596.0,
+          "iqr": 18072.0,
+          "lower_fence": -10584.0,
+          "upper_fence": 61704.0,
+          "min": 1615.5,
+          "max": 258025.5,
+          "outliers": 7504,
+          "outlier_rate": 0.02440333139294762
+        },
+        "AMT_GOODS_PRICE": {
+          "q1": 238500.0,
+          "q3": 679500.0,
+          "iqr": 441000.0,
+          "lower_fence": -423000.0,
+          "upper_fence": 1341000.0,
+          "min": 40500.0,
+          "max": 4050000.0,
+          "outliers": 14728,
+          "outlier_rate": 0.04793755879088509
+        },
+        "REGION_POPULATION_RELATIVE": {
+          "q1": 0.010006000000000001,
+          "q3": 0.028663,
+          "iqr": 0.018657,
+          "lower_fence": -0.0179795,
+          "upper_fence": 0.056648500000000004,
+          "min": 0.00029,
+          "max": 0.072508,
+          "outliers": 8412,
+          "outlier_rate": 0.02735511900387303
+        },
+        "DAYS_BIRTH": {
+          "q1": -19682.0,
+          "q3": -12413.0,
+          "iqr": 7269.0,
+          "lower_fence": -30585.5,
+          "upper_fence": -1509.5,
+          "min": -25229,
+          "max": -7489,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "DAYS_EMPLOYED": {
+          "q1": -2760.0,
+          "q3": -289.0,
+          "iqr": 2471.0,
+          "lower_fence": -6466.5,
+          "upper_fence": 3417.5,
+          "min": -17912,
+          "max": 365243,
+          "outliers": 72217,
+          "outlier_rate": 0.23484363160992616
+        },
+        "DAYS_REGISTRATION": {
+          "q1": -7479.5,
+          "q3": -2010.0,
+          "iqr": 5469.5,
+          "lower_fence": -15683.75,
+          "upper_fence": 6194.25,
+          "min": -24672.0,
+          "max": 0.0,
+          "outliers": 659,
+          "outlier_rate": 0.0021430127702748844
+        },
+        "DAYS_ID_PUBLISH": {
+          "q1": -4299.0,
+          "q3": -1720.0,
+          "iqr": 2579.0,
+          "lower_fence": -8167.5,
+          "upper_fence": 2148.5,
+          "min": -7197,
+          "max": 0,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "OWN_CAR_AGE": {
+          "q1": 5.0,
+          "q3": 15.0,
+          "iqr": 10.0,
+          "lower_fence": -10.0,
+          "upper_fence": 30.0,
+          "min": 0.0,
+          "max": 91.0,
+          "outliers": 4932,
+          "outlier_rate": 0.04715916696945937
+        },
+        "CNT_FAM_MEMBERS": {
+          "q1": 2.0,
+          "q3": 3.0,
+          "iqr": 1.0,
+          "lower_fence": 0.5,
+          "upper_fence": 4.5,
+          "min": 1.0,
+          "max": 20.0,
+          "outliers": 4007,
+          "outlier_rate": 0.013030512928076901
+        },
+        "REGION_RATING_CLIENT": {
+          "q1": 2.0,
+          "q3": 2.0,
+          "iqr": 0.0,
+          "lower_fence": 2.0,
+          "upper_fence": 2.0,
+          "min": 1,
+          "max": 3,
+          "outliers": 80527,
+          "outlier_rate": 0.26186705516225434
+        },
+        "REGION_RATING_CLIENT_W_CITY": {
+          "q1": 2.0,
+          "q3": 2.0,
+          "iqr": 0.0,
+          "lower_fence": 2.0,
+          "upper_fence": 2.0,
+          "min": 1,
+          "max": 3,
+          "outliers": 78027,
+          "outlier_rate": 0.25373726468321456
+        },
+        "HOUR_APPR_PROCESS_START": {
+          "q1": 10.0,
+          "q3": 14.0,
+          "iqr": 4.0,
+          "lower_fence": 4.0,
+          "upper_fence": 20.0,
+          "min": 0,
+          "max": 23,
+          "outliers": 2257,
+          "outlier_rate": 0.007339574844477108
+        },
+        "EXT_SOURCE_1": {
+          "q1": 0.33400728867409263,
+          "q3": 0.6750525982300696,
+          "iqr": 0.34104530955597695,
+          "lower_fence": -0.17756067565987282,
+          "upper_fence": 1.186620562564035,
+          "min": 0.014568132412445587,
+          "max": 0.9626927705613059,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "EXT_SOURCE_2": {
+          "q1": 0.3924574161782719,
+          "q3": 0.6636170897493769,
+          "iqr": 0.27115967357110504,
+          "lower_fence": -0.014282094178385663,
+          "upper_fence": 1.0703566001060345,
+          "min": 8.173616518884397e-08,
+          "max": 0.8549996664047012,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "EXT_SOURCE_3": {
+          "q1": 0.3706496323299817,
+          "q3": 0.6690566947824041,
+          "iqr": 0.29840706245242243,
+          "lower_fence": -0.07696096134865194,
+          "upper_fence": 1.1166672884610378,
+          "min": 0.0005272652387098817,
+          "max": 0.8960095494948396,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "APARTMENTS_AVG": {
+          "q1": 0.0577,
+          "q3": 0.1485,
+          "iqr": 0.09079999999999999,
+          "lower_fence": -0.07849999999999999,
+          "upper_fence": 0.28469999999999995,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 10655,
+          "outlier_rate": 0.07035325189831627
+        },
+        "BASEMENTAREA_AVG": {
+          "q1": 0.0442,
+          "q3": 0.1122,
+          "iqr": 0.06799999999999999,
+          "lower_fence": -0.057799999999999976,
+          "upper_fence": 0.21419999999999997,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7190,
+          "outlier_rate": 0.05636209707763702
+        },
+        "YEARS_BEGINEXPLUATATION_AVG": {
+          "q1": 0.9767,
+          "q3": 0.9866,
+          "iqr": 0.00990000000000002,
+          "lower_fence": 0.96185,
+          "upper_fence": 1.0014500000000002,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 4784,
+          "outlier_rate": 0.030373831775700934
+        },
+        "YEARS_BUILD_AVG": {
+          "q1": 0.6872,
+          "q3": 0.8232,
+          "iqr": 0.136,
+          "lower_fence": 0.4832,
+          "upper_fence": 1.0272000000000001,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 2154,
+          "outlier_rate": 0.020907952593110277
+        },
+        "COMMONAREA_AVG": {
+          "q1": 0.0078,
+          "q3": 0.0515,
+          "iqr": 0.043699999999999996,
+          "lower_fence": -0.057749999999999996,
+          "upper_fence": 0.11704999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7942,
+          "outlier_rate": 0.08572415430779526
+        },
+        "ELEVATORS_AVG": {
+          "q1": 0.0,
+          "q3": 0.12,
+          "iqr": 0.12,
+          "lower_fence": -0.18,
+          "upper_fence": 0.3,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 10420,
+          "outlier_rate": 0.07255256928004457
+        },
+        "ENTRANCES_AVG": {
+          "q1": 0.069,
+          "q3": 0.2069,
+          "iqr": 0.1379,
+          "lower_fence": -0.13784999999999997,
+          "upper_fence": 0.41374999999999995,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 3882,
+          "outlier_rate": 0.025425227431999632
+        },
+        "FLOORSMAX_AVG": {
+          "q1": 0.1667,
+          "q3": 0.3333,
+          "iqr": 0.1666,
+          "lower_fence": -0.08320000000000002,
+          "upper_fence": 0.5831999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 5215,
+          "outlier_rate": 0.03375601167705562
+        },
+        "FLOORSMIN_AVG": {
+          "q1": 0.0833,
+          "q3": 0.375,
+          "iqr": 0.2917,
+          "lower_fence": -0.35425,
+          "upper_fence": 0.81255,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 343,
+          "outlier_rate": 0.003469237071276133
+        },
+        "LANDAREA_AVG": {
+          "q1": 0.0187,
+          "q3": 0.0856,
+          "iqr": 0.06689999999999999,
+          "lower_fence": -0.08164999999999997,
+          "upper_fence": 0.18594999999999998,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 6888,
+          "outlier_rate": 0.05513884775177912
+        },
+        "LIVINGAPARTMENTS_AVG": {
+          "q1": 0.0504,
+          "q3": 0.121,
+          "iqr": 0.0706,
+          "lower_fence": -0.055499999999999994,
+          "upper_fence": 0.2269,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7881,
+          "outlier_rate": 0.08098692864189411
+        },
+        "LIVINGAREA_AVG": {
+          "q1": 0.0453,
+          "q3": 0.1299,
+          "iqr": 0.08459999999999998,
+          "lower_fence": -0.08159999999999995,
+          "upper_fence": 0.2567999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 12517,
+          "outlier_rate": 0.08172445988208486
+        },
+        "NONLIVINGAPARTMENTS_AVG": {
+          "q1": 0.0,
+          "q3": 0.0039,
+          "iqr": 0.0039,
+          "lower_fence": -0.005849999999999999,
+          "upper_fence": 0.009749999999999998,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 15580,
+          "outlier_rate": 0.16574997074374714
+        },
+        "NONLIVINGAREA_AVG": {
+          "q1": 0.0,
+          "q3": 0.0277,
+          "iqr": 0.0277,
+          "lower_fence": -0.04155,
+          "upper_fence": 0.06924999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 16546,
+          "outlier_rate": 0.12004730499386922
+        },
+        "APARTMENTS_MODE": {
+          "q1": 0.0525,
+          "q3": 0.1439,
+          "iqr": 0.09140000000000001,
+          "lower_fence": -0.08460000000000001,
+          "upper_fence": 0.281,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 10397,
+          "outlier_rate": 0.06864971937933312
+        },
+        "BASEMENTAREA_MODE": {
+          "q1": 0.0407,
+          "q3": 0.1124,
+          "iqr": 0.0717,
+          "lower_fence": -0.06685,
+          "upper_fence": 0.21995,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 6910,
+          "outlier_rate": 0.05416718926376521
+        },
+        "YEARS_BEGINEXPLUATATION_MODE": {
+          "q1": 0.9767,
+          "q3": 0.9866,
+          "iqr": 0.00990000000000002,
+          "lower_fence": 0.96185,
+          "upper_fence": 1.0014500000000002,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 5074,
+          "outlier_rate": 0.03221505485574969
+        },
+        "YEARS_BUILD_MODE": {
+          "q1": 0.6994,
+          "q3": 0.8236,
+          "iqr": 0.12419999999999998,
+          "lower_fence": 0.5131000000000001,
+          "upper_fence": 1.0099,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 2537,
+          "outlier_rate": 0.02462556904768838
+        },
+        "COMMONAREA_MODE": {
+          "q1": 0.0072,
+          "q3": 0.049,
+          "iqr": 0.041800000000000004,
+          "lower_fence": -0.05550000000000001,
+          "upper_fence": 0.11170000000000001,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7938,
+          "outlier_rate": 0.08568097921119099
+        },
+        "ELEVATORS_MODE": {
+          "q1": 0.0,
+          "q3": 0.1208,
+          "iqr": 0.1208,
+          "lower_fence": -0.1812,
+          "upper_fence": 0.302,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 9732,
+          "outlier_rate": 0.06776215011836792
+        },
+        "ENTRANCES_MODE": {
+          "q1": 0.069,
+          "q3": 0.2069,
+          "iqr": 0.1379,
+          "lower_fence": -0.13784999999999997,
+          "upper_fence": 0.41374999999999995,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 3840,
+          "outlier_rate": 0.02515014769162251
+        },
+        "FLOORSMAX_MODE": {
+          "q1": 0.1667,
+          "q3": 0.3333,
+          "iqr": 0.1666,
+          "lower_fence": -0.08320000000000002,
+          "upper_fence": 0.5831999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 5104,
+          "outlier_rate": 0.03303752322141743
+        },
+        "FLOORSMIN_MODE": {
+          "q1": 0.0833,
+          "q3": 0.375,
+          "iqr": 0.2917,
+          "lower_fence": -0.35425,
+          "upper_fence": 0.81255,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 320,
+          "outlier_rate": 0.0032366060140185497
+        },
+        "LANDAREA_MODE": {
+          "q1": 0.0166,
+          "q3": 0.0841,
+          "iqr": 0.06749999999999999,
+          "lower_fence": -0.08464999999999998,
+          "upper_fence": 0.18534999999999996,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7033,
+          "outlier_rate": 0.05629958133540398
+        },
+        "LIVINGAPARTMENTS_MODE": {
+          "q1": 0.0542,
+          "q3": 0.1313,
+          "iqr": 0.0771,
+          "lower_fence": -0.061450000000000005,
+          "upper_fence": 0.24695,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7469,
+          "outlier_rate": 0.0767531239723775
+        },
+        "LIVINGAREA_MODE": {
+          "q1": 0.0427,
+          "q3": 0.1252,
+          "iqr": 0.0825,
+          "lower_fence": -0.08105,
+          "upper_fence": 0.24895,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 13105,
+          "outlier_rate": 0.08556355730244644
+        },
+        "NONLIVINGAPARTMENTS_MODE": {
+          "q1": 0.0,
+          "q3": 0.0039,
+          "iqr": 0.0039,
+          "lower_fence": -0.005849999999999999,
+          "upper_fence": 0.009749999999999998,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 14224,
+          "outlier_rate": 0.15132397842484335
+        },
+        "NONLIVINGAREA_MODE": {
+          "q1": 0.0,
+          "q3": 0.0231,
+          "iqr": 0.0231,
+          "lower_fence": -0.03465,
+          "upper_fence": 0.057749999999999996,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 18817,
+          "outlier_rate": 0.13652424380935796
+        },
+        "APARTMENTS_MEDI": {
+          "q1": 0.0583,
+          "q3": 0.1489,
+          "iqr": 0.09060000000000001,
+          "lower_fence": -0.07760000000000003,
+          "upper_fence": 0.28480000000000005,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 10728,
+          "outlier_rate": 0.07083525916143942
+        },
+        "BASEMENTAREA_MEDI": {
+          "q1": 0.0437,
+          "q3": 0.1116,
+          "iqr": 0.0679,
+          "lower_fence": -0.05814999999999999,
+          "upper_fence": 0.21345,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7188,
+          "outlier_rate": 0.0563464191646808
+        },
+        "YEARS_BEGINEXPLUATATION_MEDI": {
+          "q1": 0.9767,
+          "q3": 0.9866,
+          "iqr": 0.00990000000000002,
+          "lower_fence": 0.96185,
+          "upper_fence": 1.0014500000000002,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 4762,
+          "outlier_rate": 0.030234152783421373
+        },
+        "YEARS_BUILD_MEDI": {
+          "q1": 0.6914,
+          "q3": 0.8256,
+          "iqr": 0.13419999999999999,
+          "lower_fence": 0.49010000000000004,
+          "upper_fence": 1.0269,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 2274,
+          "outlier_rate": 0.022072741038408897
+        },
+        "COMMONAREA_MEDI": {
+          "q1": 0.0079,
+          "q3": 0.0513,
+          "iqr": 0.043399999999999994,
+          "lower_fence": -0.05719999999999999,
+          "upper_fence": 0.11639999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 8004,
+          "outlier_rate": 0.08639336830516159
+        },
+        "ELEVATORS_MEDI": {
+          "q1": 0.0,
+          "q3": 0.12,
+          "iqr": 0.12,
+          "lower_fence": -0.18,
+          "upper_fence": 0.3,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 10383,
+          "outlier_rate": 0.07229494499373346
+        },
+        "ENTRANCES_MEDI": {
+          "q1": 0.069,
+          "q3": 0.2069,
+          "iqr": 0.1379,
+          "lower_fence": -0.13784999999999997,
+          "upper_fence": 0.41374999999999995,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 3893,
+          "outlier_rate": 0.025497272125907928
+        },
+        "FLOORSMAX_MEDI": {
+          "q1": 0.1667,
+          "q3": 0.3333,
+          "iqr": 0.1666,
+          "lower_fence": -0.08320000000000002,
+          "upper_fence": 0.5831999999999999,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 5360,
+          "outlier_rate": 0.03469457767766407
+        },
+        "FLOORSMIN_MEDI": {
+          "q1": 0.0833,
+          "q3": 0.375,
+          "iqr": 0.2917,
+          "lower_fence": -0.35425,
+          "upper_fence": 0.81255,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 344,
+          "outlier_rate": 0.003479351465069941
+        },
+        "LANDAREA_MEDI": {
+          "q1": 0.0187,
+          "q3": 0.0868,
+          "iqr": 0.0681,
+          "lower_fence": -0.08345,
+          "upper_fence": 0.18895,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 6873,
+          "outlier_rate": 0.055018771863817935
+        },
+        "LIVINGAPARTMENTS_MEDI": {
+          "q1": 0.0513,
+          "q3": 0.1231,
+          "iqr": 0.0718,
+          "lower_fence": -0.056400000000000006,
+          "upper_fence": 0.2308,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 7927,
+          "outlier_rate": 0.08145963498849063
+        },
+        "LIVINGAREA_MEDI": {
+          "q1": 0.0457,
+          "q3": 0.1303,
+          "iqr": 0.08460000000000001,
+          "lower_fence": -0.08120000000000002,
+          "upper_fence": 0.2572,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 12907,
+          "outlier_rate": 0.08427080000783489
+        },
+        "NONLIVINGAPARTMENTS_MEDI": {
+          "q1": 0.0,
+          "q3": 0.0039,
+          "iqr": 0.0039,
+          "lower_fence": -0.005849999999999999,
+          "upper_fence": 0.009749999999999998,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 15215,
+          "outlier_rate": 0.16186686809153483
+        },
+        "NONLIVINGAREA_MEDI": {
+          "q1": 0.0,
+          "q3": 0.0266,
+          "iqr": 0.0266,
+          "lower_fence": -0.0399,
+          "upper_fence": 0.0665,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 17254,
+          "outlier_rate": 0.12518410494163057
+        },
+        "TOTALAREA_MODE": {
+          "q1": 0.0412,
+          "q3": 0.1276,
+          "iqr": 0.08639999999999999,
+          "lower_fence": -0.08839999999999999,
+          "upper_fence": 0.2572,
+          "min": 0.0,
+          "max": 1.0,
+          "outliers": 12091,
+          "outlier_rate": 0.07600578325370883
+        },
+        "OBS_30_CNT_SOCIAL_CIRCLE": {
+          "q1": 0.0,
+          "q3": 2.0,
+          "iqr": 2.0,
+          "lower_fence": -3.0,
+          "upper_fence": 5.0,
+          "min": 0.0,
+          "max": 348.0,
+          "outliers": 19971,
+          "outlier_rate": 0.06516036412280989
+        },
+        "DEF_30_CNT_SOCIAL_CIRCLE": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 34.0,
+          "outliers": 35166,
+          "outlier_rate": 0.11473783810238507
+        },
+        "OBS_60_CNT_SOCIAL_CIRCLE": {
+          "q1": 0.0,
+          "q3": 2.0,
+          "iqr": 2.0,
+          "lower_fence": -3.0,
+          "upper_fence": 5.0,
+          "min": 0.0,
+          "max": 344.0,
+          "outliers": 19564,
+          "outlier_rate": 0.06383242520147477
+        },
+        "DEF_60_CNT_SOCIAL_CIRCLE": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 24.0,
+          "outliers": 25769,
+          "outlier_rate": 0.08407778394074847
+        },
+        "DAYS_LAST_PHONE_CHANGE": {
+          "q1": -1570.0,
+          "q3": -274.0,
+          "iqr": 1296.0,
+          "lower_fence": -3514.0,
+          "upper_fence": 1670.0,
+          "min": -4292.0,
+          "max": 0.0,
+          "outliers": 435,
+          "outlier_rate": 0.001414588143475009
+        },
+        "AMT_REQ_CREDIT_BUREAU_HOUR": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 4.0,
+          "outliers": 1626,
+          "outlier_rate": 0.006112965803482811
+        },
+        "AMT_REQ_CREDIT_BUREAU_DAY": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 9.0,
+          "outliers": 1489,
+          "outlier_rate": 0.005597912719179524
+        },
+        "AMT_REQ_CREDIT_BUREAU_WEEK": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 8.0,
+          "outliers": 8536,
+          "outlier_rate": 0.03209119071250263
+        },
+        "AMT_REQ_CREDIT_BUREAU_MON": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 27.0,
+          "outliers": 43759,
+          "outlier_rate": 0.16451246654034707
+        },
+        "AMT_REQ_CREDIT_BUREAU_QRT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 261.0,
+          "outliers": 50575,
+          "outlier_rate": 0.19013729736232668
+        },
+        "AMT_REQ_CREDIT_BUREAU_YEAR": {
+          "q1": 0.0,
+          "q3": 3.0,
+          "iqr": 3.0,
+          "lower_fence": -4.5,
+          "upper_fence": 7.5,
+          "min": 0.0,
+          "max": 25.0,
+          "outliers": 3364,
+          "outlier_rate": 0.01264699690216247
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_CURR"
+        ],
+        "duplicate_rows": 0
+      }
+    },
+    "bureau": {
+      "rows": 1716428,
+      "columns": {
+        "SK_ID_CURR": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 296092,
+          "top_value_share": 6.758221142978325e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_ID_BUREAU": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1706366,
+          "top_value_share": 5.826052709464073e-07,
+          "constant": false,
+          "near_constant": false
+        },
+        "CREDIT_ACTIVE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 4,
+          "top_value_share": 0.6287901385901419,
+          "constant": false,
+          "near_constant": false
+        },
+        "CREDIT_CURRENCY": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 4,
+          "top_value_share": 0.9991796917785074,
+          "constant": false,
+          "near_constant": true
+        },
+        "DAYS_CREDIT": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3001,
+          "top_value_share": 0.0007748650103587217,
+          "constant": false,
+          "near_constant": false
+        },
+        "CREDIT_DAY_OVERDUE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 948,
+          "top_value_share": 0.997543153572419,
+          "constant": false,
+          "near_constant": true
+        },
+        "DAYS_CREDIT_ENDDATE": {
+          "dtype": "DOUBLE",
+          "missing": 105553,
+          "missing_rate": 0.06149573416420613,
+          "distinct": 13937,
+          "top_value_share": 0.06149573416420613,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_ENDDATE_FACT": {
+          "dtype": "DOUBLE",
+          "missing": 633653,
+          "missing_rate": 0.36916957775100384,
+          "distinct": 2857,
+          "top_value_share": 0.36916957775100384,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT_MAX_OVERDUE": {
+          "dtype": "DOUBLE",
+          "missing": 1124488,
+          "missing_rate": 0.6551326359159837,
+          "distinct": 67833,
+          "top_value_share": 0.6551326359159837,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_CREDIT_PROLONG": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 10,
+          "top_value_share": 0.9946901355605945,
+          "constant": false,
+          "near_constant": true
+        },
+        "AMT_CREDIT_SUM": {
+          "dtype": "DOUBLE",
+          "missing": 13,
+          "missing_rate": 7.573868522303295e-06,
+          "distinct": 241096,
+          "top_value_share": 0.03879102415015369,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT_SUM_DEBT": {
+          "dtype": "DOUBLE",
+          "missing": 257669,
+          "missing_rate": 0.15011931755948982,
+          "distinct": 227728,
+          "top_value_share": 0.5921798059691405,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT_SUM_LIMIT": {
+          "dtype": "DOUBLE",
+          "missing": 591780,
+          "missing_rate": 0.3447741472406649,
+          "distinct": 51948,
+          "top_value_share": 0.6118182644422021,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT_SUM_OVERDUE": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1606,
+          "top_value_share": 0.9975775272834049,
+          "constant": false,
+          "near_constant": true
+        },
+        "CREDIT_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 15,
+          "top_value_share": 0.7291974961955876,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_CREDIT_UPDATE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3045,
+          "top_value_share": 0.010779945328321374,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_ANNUITY": {
+          "dtype": "DOUBLE",
+          "missing": 1226791,
+          "missing_rate": 0.714734902949614,
+          "distinct": 39135,
+          "top_value_share": 0.714734902949614,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "DAYS_CREDIT": {
+          "q1": -1666.0,
+          "q3": -474.0,
+          "iqr": 1192.0,
+          "lower_fence": -3454.0,
+          "upper_fence": 1314.0,
+          "min": -2922,
+          "max": 0,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "CREDIT_DAY_OVERDUE": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 2792,
+          "outliers": 4217,
+          "outlier_rate": 0.0024568464275809996
+        },
+        "DAYS_CREDIT_ENDDATE": {
+          "q1": -1138.0,
+          "q3": 474.0,
+          "iqr": 1612.0,
+          "lower_fence": -3556.0,
+          "upper_fence": 2892.0,
+          "min": -42060.0,
+          "max": 31199.0,
+          "outliers": 79340,
+          "outlier_rate": 0.04925273531465818
+        },
+        "DAYS_ENDDATE_FACT": {
+          "q1": -1489.0,
+          "q3": -425.0,
+          "iqr": 1064.0,
+          "lower_fence": -3085.0,
+          "upper_fence": 1171.0,
+          "min": -42023.0,
+          "max": 0.0,
+          "outliers": 1,
+          "outlier_rate": 9.235529080372192e-07
+        },
+        "AMT_CREDIT_MAX_OVERDUE": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 115987185.0,
+          "outliers": 121290,
+          "outlier_rate": 0.20490252390444977
+        },
+        "CNT_CREDIT_PROLONG": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 9,
+          "outliers": 9114,
+          "outlier_rate": 0.005309864439405556
+        },
+        "AMT_CREDIT_SUM": {
+          "q1": 51300.0,
+          "q3": 315000.0,
+          "iqr": 263700.0,
+          "lower_fence": -344250.0,
+          "upper_fence": 710550.0,
+          "min": 0.0,
+          "max": 585000000.0,
+          "outliers": 187998,
+          "outlier_rate": 0.10952945528907636
+        },
+        "AMT_CREDIT_SUM_DEBT": {
+          "q1": 0.0,
+          "q3": 40153.5,
+          "iqr": 40153.5,
+          "lower_fence": -60230.25,
+          "upper_fence": 100383.75,
+          "min": -4705600.32,
+          "max": 170100000.0,
+          "outliers": 280455,
+          "outlier_rate": 0.1922558832541907
+        },
+        "AMT_CREDIT_SUM_LIMIT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": -586406.115,
+          "max": 4705600.32,
+          "outliers": 74506,
+          "outlier_rate": 0.06624828390749816
+        },
+        "AMT_CREDIT_SUM_OVERDUE": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 3756681.0,
+          "outliers": 4158,
+          "outlier_rate": 0.0024224727165951614
+        },
+        "DAYS_CREDIT_UPDATE": {
+          "q1": -908.0,
+          "q3": -33.0,
+          "iqr": 875.0,
+          "lower_fence": -2220.5,
+          "upper_fence": 1279.5,
+          "min": -41947,
+          "max": 372,
+          "outliers": 63755,
+          "outlier_rate": 0.0371439990491882
+        },
+        "AMT_ANNUITY": {
+          "q1": 0.0,
+          "q3": 13500.0,
+          "iqr": 13500.0,
+          "lower_fence": -20250.0,
+          "upper_fence": 33750.0,
+          "min": 0.0,
+          "max": 118453423.5,
+          "outliers": 43918,
+          "outlier_rate": 0.08969501896302771
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_BUREAU"
+        ],
+        "duplicate_rows": 0
+      }
+    },
+    "bureau_balance": {
+      "rows": 27299925,
+      "columns": {
+        "SK_ID_BUREAU": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 794543,
+          "top_value_share": 3.55312331444134e-06,
+          "constant": false,
+          "near_constant": false
+        },
+        "MONTHS_BALANCE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 96,
+          "top_value_share": 0.022805960089633946,
+          "constant": false,
+          "near_constant": false
+        },
+        "STATUS": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 8,
+          "top_value_share": 0.49989122680739967,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "MONTHS_BALANCE": {
+          "q1": -46.0,
+          "q3": -11.0,
+          "iqr": 35.0,
+          "lower_fence": -98.5,
+          "upper_fence": 41.5,
+          "min": -96,
+          "max": 0,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_BUREAU",
+          "MONTHS_BALANCE"
+        ],
+        "duplicate_rows": 0
+      }
+    },
+    "installments_payments": {
+      "rows": 13605401,
+      "columns": {
+        "SK_ID_PREV": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1006877,
+          "top_value_share": 2.153556517738801e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_ID_CURR": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 338013,
+          "top_value_share": 2.7342082750813445e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "NUM_INSTALMENT_VERSION": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 65,
+          "top_value_share": 0.6236496814757609,
+          "constant": false,
+          "near_constant": false
+        },
+        "NUM_INSTALMENT_NUMBER": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 276,
+          "top_value_share": 0.07380598337380868,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_INSTALMENT": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2861,
+          "top_value_share": 0.0008461345608262483,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_ENTRY_PAYMENT": {
+          "dtype": "DOUBLE",
+          "missing": 2905,
+          "missing_rate": 0.00021351814621266952,
+          "distinct": 2938,
+          "top_value_share": 0.0009630734147416897,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_INSTALMENT": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 912772,
+          "top_value_share": 0.018673613515691304,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_PAYMENT": {
+          "dtype": "DOUBLE",
+          "missing": 2905,
+          "missing_rate": 0.00021351814621266952,
+          "distinct": 957892,
+          "top_value_share": 0.01828369483560242,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "NUM_INSTALMENT_VERSION": {
+          "q1": 0.0,
+          "q3": 1.0,
+          "iqr": 1.0,
+          "lower_fence": -1.5,
+          "upper_fence": 2.5,
+          "min": 0.0,
+          "max": 178.0,
+          "outliers": 417616,
+          "outlier_rate": 0.03069486889802072
+        },
+        "NUM_INSTALMENT_NUMBER": {
+          "q1": 4.0,
+          "q3": 19.0,
+          "iqr": 15.0,
+          "lower_fence": -18.5,
+          "upper_fence": 41.5,
+          "min": 1,
+          "max": 277,
+          "outliers": 1886320,
+          "outlier_rate": 0.13864493960890972
+        },
+        "DAYS_INSTALMENT": {
+          "q1": -1654.0,
+          "q3": -361.0,
+          "iqr": 1293.0,
+          "lower_fence": -3593.5,
+          "upper_fence": 1578.5,
+          "min": -2922.0,
+          "max": -1.0,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "DAYS_ENTRY_PAYMENT": {
+          "q1": -1662.0,
+          "q3": -370.0,
+          "iqr": 1292.0,
+          "lower_fence": -3600.0,
+          "upper_fence": 1568.0,
+          "min": -4921.0,
+          "max": -1.0,
+          "outliers": 1,
+          "outlier_rate": 7.351591943125733e-08
+        },
+        "AMT_INSTALMENT": {
+          "q1": 4226.085,
+          "q3": 16710.21,
+          "iqr": 12484.125,
+          "lower_fence": -14500.1025,
+          "upper_fence": 35436.3975,
+          "min": 0.0,
+          "max": 3771487.845,
+          "outliers": 1120800,
+          "outlier_rate": 0.08237904932019277
+        },
+        "AMT_PAYMENT": {
+          "q1": 3398.265,
+          "q3": 16108.425,
+          "iqr": 12710.16,
+          "lower_fence": -15666.974999999999,
+          "upper_fence": 35173.66499999999,
+          "min": 0.0,
+          "max": 3771487.845,
+          "outliers": 1130094,
+          "outlier_rate": 0.08307989945374732
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_PREV",
+          "NUM_INSTALMENT_VERSION",
+          "NUM_INSTALMENT_NUMBER",
+          "DAYS_ENTRY_PAYMENT",
+          "AMT_PAYMENT"
+        ],
+        "duplicate_rows": 0
+      }
+    },
+    "previous_application": {
+      "rows": 1670214,
+      "columns": {
+        "SK_ID_PREV": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1683560,
+          "top_value_share": 5.987256722791211e-07,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_ID_CURR": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 338401,
+          "top_value_share": 4.6101876765492325e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_CONTRACT_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 4,
+          "top_value_share": 0.4475791724892738,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_ANNUITY": {
+          "dtype": "DOUBLE",
+          "missing": 372235,
+          "missing_rate": 0.22286665062081865,
+          "distinct": 353358,
+          "top_value_share": 0.22286665062081865,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_APPLICATION": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 89942,
+          "top_value_share": 0.23494115125367168,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT": {
+          "dtype": "DOUBLE",
+          "missing": 1,
+          "missing_rate": 5.987256722791211e-07,
+          "distinct": 84700,
+          "top_value_share": 0.20163164720209506,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_DOWN_PAYMENT": {
+          "dtype": "DOUBLE",
+          "missing": 895844,
+          "missing_rate": 0.536364801157217,
+          "distinct": 28705,
+          "top_value_share": 0.536364801157217,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_GOODS_PRICE": {
+          "dtype": "DOUBLE",
+          "missing": 385515,
+          "missing_rate": 0.23081772754868538,
+          "distinct": 89942,
+          "top_value_share": 0.23081772754868538,
+          "constant": false,
+          "near_constant": false
+        },
+        "WEEKDAY_APPR_PROCESS_START": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 7,
+          "top_value_share": 0.1527456960605048,
+          "constant": false,
+          "near_constant": false
+        },
+        "HOUR_APPR_PROCESS_START": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 24,
+          "top_value_share": 0.11539120136701045,
+          "constant": false,
+          "near_constant": false
+        },
+        "FLAG_LAST_APPL_PER_CONTRACT": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9949257999274345,
+          "constant": false,
+          "near_constant": true
+        },
+        "NFLAG_LAST_APPL_IN_DAY": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2,
+          "top_value_share": 0.9964675185335532,
+          "constant": false,
+          "near_constant": true
+        },
+        "RATE_DOWN_PAYMENT": {
+          "dtype": "DOUBLE",
+          "missing": 895844,
+          "missing_rate": 0.536364801157217,
+          "distinct": 198008,
+          "top_value_share": 0.536364801157217,
+          "constant": false,
+          "near_constant": false
+        },
+        "RATE_INTEREST_PRIMARY": {
+          "dtype": "DOUBLE",
+          "missing": 1664263,
+          "missing_rate": 0.9964369835242669,
+          "distinct": 145,
+          "top_value_share": 0.9964369835242669,
+          "constant": false,
+          "near_constant": true
+        },
+        "RATE_INTEREST_PRIVILEGED": {
+          "dtype": "DOUBLE",
+          "missing": 1664263,
+          "missing_rate": 0.9964369835242669,
+          "distinct": 25,
+          "top_value_share": 0.9964369835242669,
+          "constant": false,
+          "near_constant": true
+        },
+        "NAME_CASH_LOAN_PURPOSE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 25,
+          "top_value_share": 0.5524208275107262,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_CONTRACT_STATUS": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 4,
+          "top_value_share": 0.6207474012312195,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_DECISION": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2999,
+          "top_value_share": 0.001463285543050172,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_PAYMENT_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 4,
+          "top_value_share": 0.6188141160354302,
+          "constant": false,
+          "near_constant": false
+        },
+        "CODE_REJECT_REASON": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 9,
+          "top_value_share": 0.8101315160811728,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_TYPE_SUITE": {
+          "dtype": "VARCHAR",
+          "missing": 820405,
+          "missing_rate": 0.4911975351661524,
+          "distinct": 7,
+          "top_value_share": 0.4911975351661524,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_CLIENT_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 4,
+          "top_value_share": 0.7371875699760629,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_GOODS_CATEGORY": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 27,
+          "top_value_share": 0.5692737577340389,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_PORTFOLIO": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 5,
+          "top_value_share": 0.4137260255272678,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_PRODUCT_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3,
+          "top_value_share": 0.6368441409304436,
+          "constant": false,
+          "near_constant": false
+        },
+        "CHANNEL_TYPE": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 8,
+          "top_value_share": 0.43106332481945425,
+          "constant": false,
+          "near_constant": false
+        },
+        "SELLERPLACE_AREA": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2011,
+          "top_value_share": 0.4566331021054787,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_SELLER_INDUSTRY": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 11,
+          "top_value_share": 0.5123415322826895,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_PAYMENT": {
+          "dtype": "DOUBLE",
+          "missing": 372230,
+          "missing_rate": 0.22286365699245725,
+          "distinct": 48,
+          "top_value_share": 0.22286365699245725,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_YIELD_GROUP": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 5,
+          "top_value_share": 0.3096698985878456,
+          "constant": false,
+          "near_constant": false
+        },
+        "PRODUCT_COMBINATION": {
+          "dtype": "VARCHAR",
+          "missing": 346,
+          "missing_rate": 0.0002071590826085759,
+          "distinct": 17,
+          "top_value_share": 0.17122955501510584,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_FIRST_DRAWING": {
+          "dtype": "DOUBLE",
+          "missing": 673065,
+          "missing_rate": 0.40298129461254667,
+          "distinct": 2771,
+          "top_value_share": 0.5594756121071911,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_FIRST_DUE": {
+          "dtype": "DOUBLE",
+          "missing": 673065,
+          "missing_rate": 0.40298129461254667,
+          "distinct": 2812,
+          "top_value_share": 0.40298129461254667,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_LAST_DUE_1ST_VERSION": {
+          "dtype": "DOUBLE",
+          "missing": 673065,
+          "missing_rate": 0.40298129461254667,
+          "distinct": 4485,
+          "top_value_share": 0.40298129461254667,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_LAST_DUE": {
+          "dtype": "DOUBLE",
+          "missing": 673065,
+          "missing_rate": 0.40298129461254667,
+          "distinct": 2809,
+          "top_value_share": 0.40298129461254667,
+          "constant": false,
+          "near_constant": false
+        },
+        "DAYS_TERMINATION": {
+          "dtype": "DOUBLE",
+          "missing": 673065,
+          "missing_rate": 0.40298129461254667,
+          "distinct": 2768,
+          "top_value_share": 0.40298129461254667,
+          "constant": false,
+          "near_constant": false
+        },
+        "NFLAG_INSURED_ON_APPROVAL": {
+          "dtype": "DOUBLE",
+          "missing": 673065,
+          "missing_rate": 0.40298129461254667,
+          "distinct": 2,
+          "top_value_share": 0.40298129461254667,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "AMT_ANNUITY": {
+          "q1": 6321.78,
+          "q3": 20658.42,
+          "iqr": 14336.64,
+          "lower_fence": -15183.18,
+          "upper_fence": 42163.38,
+          "min": 0.0,
+          "max": 418058.145,
+          "outliers": 82762,
+          "outlier_rate": 0.06376220262423352
+        },
+        "AMT_APPLICATION": {
+          "q1": 18720.0,
+          "q3": 180360.0,
+          "iqr": 161640.0,
+          "lower_fence": -223740.0,
+          "upper_fence": 422820.0,
+          "min": 0.0,
+          "max": 6905160.0,
+          "outliers": 208019,
+          "outlier_rate": 0.1245463156218305
+        },
+        "AMT_CREDIT": {
+          "q1": 24160.5,
+          "q3": 216418.5,
+          "iqr": 192258.0,
+          "lower_fence": -264226.5,
+          "upper_fence": 504805.5,
+          "min": 0.0,
+          "max": 6905160.0,
+          "outliers": 179989,
+          "outlier_rate": 0.10776409954897968
+        },
+        "AMT_DOWN_PAYMENT": {
+          "q1": 0.0,
+          "q3": 7740.0,
+          "iqr": 7740.0,
+          "lower_fence": -11610.0,
+          "upper_fence": 19350.0,
+          "min": -0.9,
+          "max": 3060045.0,
+          "outliers": 64402,
+          "outlier_rate": 0.08316696153001794
+        },
+        "AMT_GOODS_PRICE": {
+          "q1": 50841.0,
+          "q3": 234000.0,
+          "iqr": 183159.0,
+          "lower_fence": -223897.5,
+          "upper_fence": 508738.5,
+          "min": 0.0,
+          "max": 6905160.0,
+          "outliers": 145715,
+          "outlier_rate": 0.11342345561100305
+        },
+        "HOUR_APPR_PROCESS_START": {
+          "q1": 10.0,
+          "q3": 15.0,
+          "iqr": 5.0,
+          "lower_fence": 2.5,
+          "upper_fence": 22.5,
+          "min": 0,
+          "max": 23,
+          "outliers": 1639,
+          "outlier_rate": 0.0009813113768654795
+        },
+        "RATE_DOWN_PAYMENT": {
+          "q1": 0.0,
+          "q3": 0.1089090909090909,
+          "iqr": 0.1089090909090909,
+          "lower_fence": -0.16336363636363635,
+          "upper_fence": 0.2722727272727272,
+          "min": -1.4978763414307847e-05,
+          "max": 1.0,
+          "outliers": 43162,
+          "outlier_rate": 0.05573821299895399
+        },
+        "RATE_INTEREST_PRIMARY": {
+          "q1": 0.1607163096452454,
+          "q3": 0.19332993312932112,
+          "iqr": 0.03261362348407573,
+          "lower_fence": 0.11179587441913179,
+          "upper_fence": 0.24225036835543473,
+          "min": 0.03478125354187918,
+          "max": 1.0,
+          "outliers": 234,
+          "outlier_rate": 0.039321122500420094
+        },
+        "RATE_INTEREST_PRIVILEGED": {
+          "q1": 0.715644820295983,
+          "q3": 0.852536997885835,
+          "iqr": 0.13689217758985206,
+          "lower_fence": 0.5103065539112048,
+          "upper_fence": 1.057875264270613,
+          "min": 0.3731501057082452,
+          "max": 1.0,
+          "outliers": 72,
+          "outlier_rate": 0.012098806923206184
+        },
+        "DAYS_DECISION": {
+          "q1": -1300.0,
+          "q3": -280.0,
+          "iqr": 1020.0,
+          "lower_fence": -2830.0,
+          "upper_fence": 1250.0,
+          "min": -2922,
+          "max": -1,
+          "outliers": 17571,
+          "outlier_rate": 0.010520208787616437
+        },
+        "SELLERPLACE_AREA": {
+          "q1": -1.0,
+          "q3": 82.0,
+          "iqr": 83.0,
+          "lower_fence": -125.5,
+          "upper_fence": 206.5,
+          "min": -1,
+          "max": 4000000,
+          "outliers": 268087,
+          "outlier_rate": 0.16051056930429275
+        },
+        "CNT_PAYMENT": {
+          "q1": 6.0,
+          "q3": 24.0,
+          "iqr": 18.0,
+          "lower_fence": -21.0,
+          "upper_fence": 51.0,
+          "min": 0.0,
+          "max": 84.0,
+          "outliers": 55903,
+          "outlier_rate": 0.043069097924165474
+        },
+        "DAYS_FIRST_DRAWING": {
+          "q1": 365243.0,
+          "q3": 365243.0,
+          "iqr": 0.0,
+          "lower_fence": 365243.0,
+          "upper_fence": 365243.0,
+          "min": -2922.0,
+          "max": 365243.0,
+          "outliers": 62705,
+          "outlier_rate": 0.0628842830910927
+        },
+        "DAYS_FIRST_DUE": {
+          "q1": -1628.0,
+          "q3": -411.0,
+          "iqr": 1217.0,
+          "lower_fence": -3453.5,
+          "upper_fence": 1414.5,
+          "min": -2892.0,
+          "max": 365243.0,
+          "outliers": 40645,
+          "outlier_rate": 0.040761210210309595
+        },
+        "DAYS_LAST_DUE_1ST_VERSION": {
+          "q1": -1242.0,
+          "q3": 129.0,
+          "iqr": 1371.0,
+          "lower_fence": -3298.5,
+          "upper_fence": 2185.5,
+          "min": -2801.0,
+          "max": 365243.0,
+          "outliers": 93865,
+          "outlier_rate": 0.09413337424998672
+        },
+        "DAYS_LAST_DUE": {
+          "q1": -1314.0,
+          "q3": -74.0,
+          "iqr": 1240.0,
+          "lower_fence": -3174.0,
+          "upper_fence": 1786.0,
+          "min": -2889.0,
+          "max": 365243.0,
+          "outliers": 211221,
+          "outlier_rate": 0.21182491282646826
+        },
+        "DAYS_TERMINATION": {
+          "q1": -1270.0,
+          "q3": -44.0,
+          "iqr": 1226.0,
+          "lower_fence": -3109.0,
+          "upper_fence": 1795.0,
+          "min": -2874.0,
+          "max": 365243.0,
+          "outliers": 225913,
+          "outlier_rate": 0.22655891947943588
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_PREV"
+        ],
+        "duplicate_rows": 0
+      }
+    },
+    "pos_cash_balance": {
+      "rows": 10001358,
+      "columns": {
+        "SK_ID_PREV": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 938874,
+          "top_value_share": 9.598696497015705e-06,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_ID_CURR": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 335597,
+          "top_value_share": 2.9495994443954512e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "MONTHS_BALANCE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 96,
+          "top_value_share": 0.0216411611303185,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_INSTALMENT": {
+          "dtype": "DOUBLE",
+          "missing": 26071,
+          "missing_rate": 0.0026067460038926714,
+          "distinct": 74,
+          "top_value_share": 0.24965059744886645,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_INSTALMENT_FUTURE": {
+          "dtype": "DOUBLE",
+          "missing": 26087,
+          "missing_rate": 0.002608345786642174,
+          "distinct": 80,
+          "top_value_share": 0.11857989685000776,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_CONTRACT_STATUS": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 9,
+          "top_value_share": 0.9149876446778528,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_DPD": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 3395,
+          "top_value_share": 0.970481308638287,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_DPD_DEF": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 2335,
+          "top_value_share": 0.988604647488871,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "MONTHS_BALANCE": {
+          "q1": -54.0,
+          "q3": -13.0,
+          "iqr": 41.0,
+          "lower_fence": -115.5,
+          "upper_fence": 48.5,
+          "min": -96,
+          "max": -1,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "CNT_INSTALMENT": {
+          "q1": 10.0,
+          "q3": 24.0,
+          "iqr": 14.0,
+          "lower_fence": -11.0,
+          "upper_fence": 45.0,
+          "min": 1.0,
+          "max": 92.0,
+          "outliers": 498724,
+          "outlier_rate": 0.0499959550036004
+        },
+        "CNT_INSTALMENT_FUTURE": {
+          "q1": 3.0,
+          "q3": 14.0,
+          "iqr": 11.0,
+          "lower_fence": -13.5,
+          "upper_fence": 30.5,
+          "min": 0.0,
+          "max": 85.0,
+          "outliers": 694783,
+          "outlier_rate": 0.06965053881744165
+        },
+        "SK_DPD": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 4231,
+          "outliers": 295227,
+          "outlier_rate": 0.02951869136171308
+        },
+        "SK_DPD_DEF": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 3595,
+          "outliers": 113969,
+          "outlier_rate": 0.011395352511128989
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_PREV",
+          "MONTHS_BALANCE"
+        ],
+        "duplicate_rows": 0
+      }
+    },
+    "credit_card_balance": {
+      "rows": 3840312,
+      "columns": {
+        "SK_ID_PREV": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 110379,
+          "top_value_share": 2.4997968915025653e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_ID_CURR": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 105324,
+          "top_value_share": 4.999593783005131e-05,
+          "constant": false,
+          "near_constant": false
+        },
+        "MONTHS_BALANCE": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 96,
+          "top_value_share": 0.026590287455810883,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_BALANCE": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1316898,
+          "top_value_share": 0.5615220846639544,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_CREDIT_LIMIT_ACTUAL": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 183,
+          "top_value_share": 0.1962921241815769,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_DRAWINGS_ATM_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 749816,
+          "missing_rate": 0.1952487193748841,
+          "distinct": 2264,
+          "top_value_share": 0.6941409968773371,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_DRAWINGS_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 189469,
+          "top_value_share": 0.8393700824308025,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_DRAWINGS_OTHER_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 749816,
+          "missing_rate": 0.1952487193748841,
+          "distinct": 1803,
+          "top_value_share": 0.8015398228060637,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_DRAWINGS_POS_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 749816,
+          "missing_rate": 0.1952487193748841,
+          "distinct": 167952,
+          "top_value_share": 0.7357722497547075,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_INST_MIN_REGULARITY": {
+          "dtype": "DOUBLE",
+          "missing": 305236,
+          "missing_rate": 0.0794820837473622,
+          "distinct": 325812,
+          "top_value_share": 0.5022675240970005,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_PAYMENT_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 767988,
+          "missing_rate": 0.19998062657409085,
+          "distinct": 159688,
+          "top_value_share": 0.19998062657409085,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_PAYMENT_TOTAL_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 190138,
+          "top_value_share": 0.5656371149010809,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_RECEIVABLE_PRINCIPAL": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1195651,
+          "top_value_share": 0.5979115759344553,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_RECIVABLE": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1389886,
+          "top_value_share": 0.5504281943758736,
+          "constant": false,
+          "near_constant": false
+        },
+        "AMT_TOTAL_RECEIVABLE": {
+          "dtype": "DOUBLE",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 1386931,
+          "top_value_share": 0.5503831459527246,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_DRAWINGS_ATM_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 749816,
+          "missing_rate": 0.1952487193748841,
+          "distinct": 44,
+          "top_value_share": 0.6941409968773371,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_DRAWINGS_CURRENT": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 130,
+          "top_value_share": 0.8410649968023431,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_DRAWINGS_OTHER_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 749816,
+          "missing_rate": 0.1952487193748841,
+          "distinct": 11,
+          "top_value_share": 0.8014161349390362,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_DRAWINGS_POS_CURRENT": {
+          "dtype": "DOUBLE",
+          "missing": 749816,
+          "missing_rate": 0.1952487193748841,
+          "distinct": 133,
+          "top_value_share": 0.7357719893591979,
+          "constant": false,
+          "near_constant": false
+        },
+        "CNT_INSTALMENT_MATURE_CUM": {
+          "dtype": "DOUBLE",
+          "missing": 305236,
+          "missing_rate": 0.0794820837473622,
+          "distinct": 124,
+          "top_value_share": 0.14359953045481721,
+          "constant": false,
+          "near_constant": false
+        },
+        "NAME_CONTRACT_STATUS": {
+          "dtype": "VARCHAR",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 7,
+          "top_value_share": 0.9630561266897064,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_DPD": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 938,
+          "top_value_share": 0.9600670466357942,
+          "constant": false,
+          "near_constant": false
+        },
+        "SK_DPD_DEF": {
+          "dtype": "BIGINT",
+          "missing": 0,
+          "missing_rate": 0.0,
+          "distinct": 374,
+          "top_value_share": 0.9767362651784542,
+          "constant": false,
+          "near_constant": false
+        }
+      },
+      "outliers": {
+        "MONTHS_BALANCE": {
+          "q1": -55.0,
+          "q3": -11.0,
+          "iqr": 44.0,
+          "lower_fence": -121.0,
+          "upper_fence": 55.0,
+          "min": -96,
+          "max": -1,
+          "outliers": 0,
+          "outlier_rate": 0.0
+        },
+        "AMT_BALANCE": {
+          "q1": 0.0,
+          "q3": 89046.68625,
+          "iqr": 89046.68625,
+          "lower_fence": -133570.02937499998,
+          "upper_fence": 222616.71562499998,
+          "min": -420250.185,
+          "max": 1505902.185,
+          "outliers": 248146,
+          "outlier_rate": 0.06461610410820788
+        },
+        "AMT_CREDIT_LIMIT_ACTUAL": {
+          "q1": 45000.0,
+          "q3": 180000.0,
+          "iqr": 135000.0,
+          "lower_fence": -157500.0,
+          "upper_fence": 382500.0,
+          "min": 0,
+          "max": 1350000,
+          "outliers": 404927,
+          "outlier_rate": 0.10544117248806868
+        },
+        "AMT_DRAWINGS_ATM_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": -6827.31,
+          "max": 2115000.0,
+          "outliers": 424778,
+          "outlier_rate": 0.1374465457971795
+        },
+        "AMT_DRAWINGS_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": -6211.62,
+          "max": 2287098.315,
+          "outliers": 616869,
+          "outlier_rate": 0.1606299175691975
+        },
+        "AMT_DRAWINGS_OTHER_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 1529847.0,
+          "outliers": 12333,
+          "outlier_rate": 0.003990621570129843
+        },
+        "AMT_DRAWINGS_POS_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 2239274.16,
+          "outliers": 264901,
+          "outlier_rate": 0.08571472022613846
+        },
+        "AMT_INST_MIN_REGULARITY": {
+          "q1": 0.0,
+          "q3": 6633.911249999999,
+          "iqr": 6633.911249999999,
+          "lower_fence": -9950.866875,
+          "upper_fence": 16584.778124999997,
+          "min": 0.0,
+          "max": 202882.005,
+          "outliers": 124489,
+          "outlier_rate": 0.03521536736409627
+        },
+        "AMT_PAYMENT_CURRENT": {
+          "q1": 152.37,
+          "q3": 9000.0,
+          "iqr": 8847.63,
+          "lower_fence": -13119.074999999999,
+          "upper_fence": 22271.445,
+          "min": 0.0,
+          "max": 4289207.445,
+          "outliers": 282428,
+          "outlier_rate": 0.09192650254335155
+        },
+        "AMT_PAYMENT_TOTAL_CURRENT": {
+          "q1": 0.0,
+          "q3": 6750.0,
+          "iqr": 6750.0,
+          "lower_fence": -10125.0,
+          "upper_fence": 16875.0,
+          "min": 0.0,
+          "max": 4278315.69,
+          "outliers": 324742,
+          "outlier_rate": 0.08456135855628397
+        },
+        "AMT_RECEIVABLE_PRINCIPAL": {
+          "q1": 0.0,
+          "q3": 85359.23999999999,
+          "iqr": 85359.23999999999,
+          "lower_fence": -128038.85999999999,
+          "upper_fence": 213398.09999999998,
+          "min": -423305.82,
+          "max": 1472316.795,
+          "outliers": 250529,
+          "outlier_rate": 0.06523662660742148
+        },
+        "AMT_RECIVABLE": {
+          "q1": 0.0,
+          "q3": 88899.49124999999,
+          "iqr": 88899.49124999999,
+          "lower_fence": -133349.236875,
+          "upper_fence": 222248.728125,
+          "min": -420250.185,
+          "max": 1493338.185,
+          "outliers": 247510,
+          "outlier_rate": 0.06445049256414583
+        },
+        "AMT_TOTAL_RECEIVABLE": {
+          "q1": 0.0,
+          "q3": 88914.51,
+          "iqr": 88914.51,
+          "lower_fence": -133371.76499999998,
+          "upper_fence": 222286.27499999997,
+          "min": -420250.185,
+          "max": 1493338.185,
+          "outliers": 247473,
+          "outlier_rate": 0.06444085793029317
+        },
+        "CNT_DRAWINGS_ATM_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 51.0,
+          "outliers": 424778,
+          "outlier_rate": 0.1374465457971795
+        },
+        "CNT_DRAWINGS_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 165,
+          "outliers": 610360,
+          "outlier_rate": 0.15893500319765685
+        },
+        "CNT_DRAWINGS_OTHER_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 12.0,
+          "outliers": 12808,
+          "outlier_rate": 0.004144318581871648
+        },
+        "CNT_DRAWINGS_POS_CURRENT": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0.0,
+          "max": 165.0,
+          "outliers": 264902,
+          "outlier_rate": 0.08571504379879476
+        },
+        "CNT_INSTALMENT_MATURE_CUM": {
+          "q1": 4.0,
+          "q3": 32.0,
+          "iqr": 28.0,
+          "lower_fence": -38.0,
+          "upper_fence": 74.0,
+          "min": 0.0,
+          "max": 120.0,
+          "outliers": 58845,
+          "outlier_rate": 0.016646035332762293
+        },
+        "SK_DPD": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 3260,
+          "outliers": 153355,
+          "outlier_rate": 0.039932953364205825
+        },
+        "SK_DPD_DEF": {
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "lower_fence": 0.0,
+          "upper_fence": 0.0,
+          "min": 0,
+          "max": 3260,
+          "outliers": 89340,
+          "outlier_rate": 0.02326373482154575
+        }
+      },
+      "duplicates": {
+        "key": [
+          "SK_ID_PREV",
+          "MONTHS_BALANCE"
+        ],
+        "duplicate_rows": 0
+      }
+    }
+  },
+  "anomalies": [
+    {
+      "table": "application_train",
+      "column": "DAYS_EMPLOYED",
+      "description": "sentinel value 365243 (about 1000 years of employment)",
+      "rows": 55374,
+      "handling": "converted to null, indicator DAYS_EMPLOYED_ANOMALY added",
+      "default_rate_flagged": 0.05399646043269404,
+      "default_rate_other": 0.0865997453765215
+    },
+    {
+      "table": "application_train",
+      "column": "CODE_GENDER",
+      "description": "placeholder value XNA",
+      "rows": 4,
+      "handling": "converted to null; column excluded from model features, kept for fairness audit"
+    },
+    {
+      "table": "application_train",
+      "column": "ORGANIZATION_TYPE",
+      "description": "placeholder value XNA",
+      "rows": 55374,
+      "handling": "kept as its own category; overlaps with the DAYS_EMPLOYED sentinel"
+    },
+    {
+      "table": "application_train",
+      "column": "NAME_FAMILY_STATUS",
+      "description": "placeholder value Unknown",
+      "rows": 2,
+      "handling": "kept as its own category"
+    },
+    {
+      "table": "application_train",
+      "column": "AMT_INCOME_TOTAL",
+      "description": "income above 10 million",
+      "rows": 3,
+      "handling": "kept; tree models and WoE binning are insensitive to the scale"
+    },
+    {
+      "table": "bureau",
+      "column": "DAYS_CREDIT_ENDDATE",
+      "description": "below -40000 days (more than 100 years ago)",
+      "rows": 134,
+      "handling": "column not used in features"
+    },
+    {
+      "table": "bureau",
+      "column": "DAYS_ENDDATE_FACT",
+      "description": "below -40000 days",
+      "rows": 1,
+      "handling": "kept; column only used in the leakage filter"
+    },
+    {
+      "table": "bureau",
+      "column": "AMT_CREDIT_SUM_DEBT",
+      "description": "negative debt",
+      "rows": 8418,
+      "handling": "kept; enters debt to credit ratio as reported"
+    },
+    {
+      "table": "bureau",
+      "column": "SK_ID_CURR",
+      "description": "applicant not in application_train (test set applicants)",
+      "rows": 251103,
+      "handling": "dropped implicitly by the left join onto application_train"
+    },
+    {
+      "table": "bureau_balance",
+      "column": "SK_ID_BUREAU",
+      "description": "no matching bureau record",
+      "rows": 3120184,
+      "handling": "dropped by the join to bureau"
+    },
+    {
+      "table": "installments_payments",
+      "column": "DAYS_ENTRY_PAYMENT",
+      "description": "missing payment date",
+      "rows": 2905,
+      "handling": "DPD left null for these installments; counted in INST_UNPAID_COUNT"
+    },
+    {
+      "table": "installments_payments",
+      "column": "AMT_INSTALMENT",
+      "description": "zero installment amount",
+      "rows": 290,
+      "handling": "payment ratio left null (division guarded)"
+    },
+    {
+      "table": "previous_application",
+      "column": "DAYS_FIRST_DUE",
+      "description": "sentinel value 365243 (event never happened)",
+      "rows": 40645,
+      "handling": "set to null in previous_application_valid"
+    },
+    {
+      "table": "previous_application",
+      "column": "AMT_APPLICATION",
+      "description": "zero amount requested",
+      "rows": 392402,
+      "handling": "credit to application ratio left null (division guarded)"
+    },
+    {
+      "table": "previous_application",
+      "column": "NAME_CONTRACT_STATUS",
+      "description": "Unused offer status",
+      "rows": 26436,
+      "handling": "counted in totals, not in approved, refused or canceled"
+    },
+    {
+      "table": "pos_cash_balance",
+      "column": "CNT_INSTALMENT_FUTURE",
+      "description": "missing remaining installment count",
+      "rows": 26087,
+      "handling": "ignored by the aggregates"
+    },
+    {
+      "table": "credit_card_balance",
+      "column": "AMT_DRAWINGS_ATM_CURRENT",
+      "description": "negative drawing amount",
+      "rows": 1,
+      "handling": "kept as reported"
+    },
+    {
+      "table": "credit_card_balance",
+      "column": "AMT_CREDIT_LIMIT_ACTUAL",
+      "description": "zero credit limit",
+      "rows": 753823,
+      "handling": "utilization left null (division guarded)"
+    }
+  ],
+  "transformations": [
+    {
+      "table": "application_train",
+      "step": "DAYS_EMPLOYED = 365243 set to null",
+      "rows_touched": 55374
+    },
+    {
+      "table": "application_train",
+      "step": "DAYS_EMPLOYED_ANOMALY indicator added (1 where sentinel)",
+      "rows_touched": 55374
+    },
+    {
+      "table": "application_train",
+      "step": "CODE_GENDER = XNA set to null",
+      "rows_touched": 4
+    },
+    {
+      "table": "installments_payments",
+      "step": "rows with a positive day or month offset removed (leakage filter)",
+      "rows_touched": 0
+    },
+    {
+      "table": "bureau",
+      "step": "rows with a positive day or month offset removed (leakage filter)",
+      "rows_touched": 17
+    },
+    {
+      "table": "bureau_balance",
+      "step": "rows with a positive day or month offset removed (leakage filter)",
+      "rows_touched": 0
+    },
+    {
+      "table": "previous_application",
+      "step": "rows with a positive day or month offset removed (leakage filter)",
+      "rows_touched": 0
+    },
+    {
+      "table": "pos_cash_balance",
+      "step": "rows with a positive day or month offset removed (leakage filter)",
+      "rows_touched": 0
+    },
+    {
+      "table": "credit_card_balance",
+      "step": "rows with a positive day or month offset removed (leakage filter)",
+      "rows_touched": 0
+    },
+    {
+      "table": "bureau_balance",
+      "step": "rows whose bureau record was removed by the leakage filter",
+      "rows_touched": 102
+    },
+    {
+      "table": "bureau_balance",
+      "step": "rows with no bureau record (orphans) removed by the join",
+      "rows_touched": 3120184
+    },
+    {
+      "table": "previous_application",
+      "step": "planned schedule dates after the application set to null",
+      "rows_touched": 224392
+    },
+    {
+      "table": "previous_application",
+      "step": "schedule dates equal to 365243 set to null",
+      "rows_touched": 997144
+    }
+  ]
+}

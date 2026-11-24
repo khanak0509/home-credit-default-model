@@ -1,0 +1,115 @@
+{
+  "thresholds": [
+    0.1,
+    0.25
+  ],
+  "rows": [
+    {
+      "variable": "model score",
+      "psi": 0.00048769174560678427,
+      "status": "stable"
+    },
+    {
+      "variable": "EXT_SOURCE_MEAN",
+      "psi": 0.00016764038929632807,
+      "status": "stable"
+    },
+    {
+      "variable": "ANNUITY_TO_CREDIT",
+      "psi": 0.0002581904225023023,
+      "status": "stable"
+    },
+    {
+      "variable": "EXT_SOURCE_MAX",
+      "psi": 0.00030804800758025446,
+      "status": "stable"
+    },
+    {
+      "variable": "AMT_ANNUITY",
+      "psi": 0.00027773492054200354,
+      "status": "stable"
+    },
+    {
+      "variable": "CREDIT_TO_GOODS",
+      "psi": 0.0001397192389911357,
+      "status": "stable"
+    },
+    {
+      "variable": "EXT_SOURCE_MIN",
+      "psi": 0.00020187596806487768,
+      "status": "stable"
+    },
+    {
+      "variable": "ORGANIZATION_TYPE",
+      "psi": 0.0008038738205298519,
+      "status": "stable"
+    },
+    {
+      "variable": "PREV_MEAN_APPROVED_ANNUITY",
+      "psi": 0.00014357261260531369,
+      "status": "stable"
+    },
+    {
+      "variable": "EXT_SOURCE_3",
+      "psi": 0.0003899066260775534,
+      "status": "stable"
+    },
+    {
+      "variable": "POS_REMAINING_INSTALMENTS",
+      "psi": 7.637268740371763e-05,
+      "status": "stable"
+    },
+    {
+      "variable": "EXT_SOURCE_2",
+      "psi": 0.00012483773379976182,
+      "status": "stable"
+    },
+    {
+      "variable": "NAME_EDUCATION_TYPE",
+      "psi": 0.00013454447163030372,
+      "status": "stable"
+    },
+    {
+      "variable": "OCCUPATION_TYPE",
+      "psi": 0.00035711421023453763,
+      "status": "stable"
+    },
+    {
+      "variable": "OWN_CAR_AGE",
+      "psi": 0.0002774689112159552,
+      "status": "stable"
+    },
+    {
+      "variable": "PREV_MEAN_CREDIT_TO_APPLICATION",
+      "psi": 0.0002038826968971167,
+      "status": "stable"
+    },
+    {
+      "variable": "EXT_SOURCE_1",
+      "psi": 0.000733063217518875,
+      "status": "stable"
+    },
+    {
+      "variable": "BUREAU_ACTIVE_DEBT_TO_CREDIT",
+      "psi": 0.00019948885002546335,
+      "status": "stable"
+    },
+    {
+      "variable": "NAME_FAMILY_STATUS",
+      "psi": 2.5345849658274892e-05,
+      "status": "stable"
+    },
+    {
+      "variable": "POS_MONTH_COUNT",
+      "psi": 0.00021332237117218655,
+      "status": "stable"
+    },
+    {
+      "variable": "PREV_MEAN_PAYBACK_RATIO",
+      "psi": 0.00012539700970949495,
+      "status": "stable"
+    }
+  ],
+  "reference": "training split (score: out-of-fold)",
+  "comparison": "holdout"
+}

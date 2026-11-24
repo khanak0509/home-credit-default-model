@@ -1,0 +1,292 @@
+{
+  "models": {
+    "legacy": {
+      "label": "Legacy logistic baseline",
+      "n_features": 11,
+      "cv_auc_mean": 0.7282005584334167,
+      "cv_auc_std": 0.002643487524804259,
+      "cv_fold_auc": [
+        0.728005172844891,
+        0.7245684026523048,
+        0.7324667905272793,
+        0.7292874364955404,
+        0.7266749896470678
+      ],
+      "oof_auc": 0.7282072073362255,
+      "calibration_brier_cv": {
+        "uncalibrated": 0.0696916758309821,
+        "isotonic": 0.0697033435423207,
+        "platt": 0.0696934168283292
+      },
+      "calibration_method": "platt"
+    },
+    "scorecard": {
+      "label": "WoE scorecard",
+      "n_features": 287,
+      "cv_auc_mean": 0.7553355403143758,
+      "cv_auc_std": 0.0024949994811241704,
+      "cv_fold_auc": [
+        0.7515638849572477,
+        0.7538642373688559,
+        0.7582687117360769,
+        0.7578064776858826,
+        0.7551743898238163
+      ],
+      "oof_auc": 0.7553251297695752,
+      "calibration_brier_cv": {
+        "uncalibrated": 0.06831623035258054,
+        "isotonic": 0.068315749110211,
+        "platt": 0.06831608900963501
+      },
+      "calibration_method": "isotonic",
+      "best_C": 1.0,
+      "cv_auc_by_C": {
+        "0.01": 0.7549610847843987,
+        "0.1": 0.7553286134460154,
+        "1.0": 0.7553355403143758
+      },
+      "selected_features": [
+        "EXT_SOURCE_MEAN",
+        "EXT_SOURCE_MAX",
+        "EXT_SOURCE_3",
+        "EXT_SOURCE_2",
+        "EXT_SOURCE_PRODUCT",
+        "EXT_SOURCE_1",
+        "DAYS_EMPLOYED",
+        "BUREAU_DEBT_TO_CREDIT",
+        "INST_MEAN_DPD_24M",
+        "AGE_YEARS",
+        "BUREAU_CREDITS_LAST_YEAR",
+        "BUREAU_ACTIVE_SHARE",
+        "INST_DAYS_SINCE_LAST_LATE",
+        "INST_MAX_DPD_12M",
+        "BUREAU_DAYS_SINCE_FIRST_CREDIT",
+        "CREDIT_TO_GOODS",
+        "PREV_MEAN_CREDIT_TO_APPLICATION",
+        "PREV_REFUSED_SHARE",
+        "PREV_DAYS_SINCE_LAST_REFUSAL",
+        "INST_LATE_SHARE_ALL",
+        "CC_MEAN_UTILIZATION_3M",
+        "CC_MEAN_UTILIZATION_12M",
+        "CC_MEAN_UTILIZATION",
+        "BUREAU_ACTIVE_DEBT_TO_CREDIT",
+        "OCCUPATION_TYPE",
+        "CC_MEAN_DRAWING_COUNT",
+        "NAME_INCOME_TYPE",
+        "INST_MAX_DPD_6M",
+        "BUREAU_ACTIVE_COUNT",
+        "REGION_RATING_CLIENT_W_CITY",
+        "AMT_GOODS_PRICE",
+        "PREV_REFUSED_LAST_YEAR",
+        "NAME_EDUCATION_TYPE",
+        "CC_MAX_UTILIZATION",
+        "DAYS_LAST_PHONE_CHANGE",
+        "ORGANIZATION_TYPE",
+        "BUREAU_CLOSED_COUNT",
+        "ANNUITY_TO_CREDIT",
+        "PREV_MIN_CREDIT_TO_APPLICATION",
+        "INST_MAX_DPD_3M"
+      ],
+      "selected_features_per_fold": [
+        40,
+        40,
+        40,
+        40,
+        40
+      ]
+    },
+    "lightgbm": {
+      "label": "LightGBM",
+      "n_features": 287,
+      "cv_auc_mean": 0.7925288790581206,
+      "cv_auc_std": 0.0021614000799316346,
+      "cv_fold_auc": [
+        0.789645047946726,
+        0.7918063354825811,
+        0.7921627993344523,
+        0.7963172562355111,
+        0.7927129562913331
+      ],
+      "oof_auc": 0.7924932847049106,
+      "calibration_brier_cv": {
+        "uncalibrated": 0.06561345055469,
+        "isotonic": 0.06561437343218388,
+        "platt": 0.06560963537055657
+      },
+      "calibration_method": "platt",
+      "params": {
+        "objective": "binary",
+        "metric": "auc",
+        "verbosity": -1,
+        "seed": 42,
+        "num_threads": 8,
+        "deterministic": true,
+        "force_col_wise": true,
+        "bagging_freq": 1,
+        "learning_rate": 0.0330717242009232,
+        "num_leaves": 75,
+        "max_depth": 5,
+        "min_child_samples": 272,
+        "feature_fraction": 0.215807772641542,
+        "bagging_fraction": 0.9805385068460479,
+        "lambda_l1": 4.676904008473196,
+        "lambda_l2": 0.05750264578688534,
+        "min_split_gain": 0.65741327578762,
+        "cat_smooth": 5.550276857734454
+      },
+      "best_iterations": [
+        1569,
+        1793,
+        1320,
+        1293,
+        1487
+      ],
+      "tuning_best_cv_auc": 0.7925288790581206,
+      "tuning_trials": 40,
+      "tuning_pruned": 9
+    },
+    "xgboost": {
+      "label": "XGBoost",
+      "n_features": 287,
+      "cv_auc_mean": 0.7924476246165758,
+      "cv_auc_std": 0.0023940578866559026,
+      "cv_fold_auc": [
+        0.7892468621273077,
+        0.7909687595391931,
+        0.7926771949300643,
+        0.7964434491216311,
+        0.7929018573646827
+      ],
+      "oof_auc": 0.7924258122473637,
+      "calibration_brier_cv": {
+        "uncalibrated": 0.06568169891936322,
+        "isotonic": 0.06570252281390224,
+        "platt": 0.06567849336062696
+      },
+      "calibration_method": "platt",
+      "params": {
+        "objective": "binary:logistic",
+        "eval_metric": "auc",
+        "tree_method": "hist",
+        "seed": 42,
+        "nthread": 8,
+        "max_cat_to_onehot": 1,
+        "verbosity": 0,
+        "eta": 0.030845509636677343,
+        "max_depth": 6,
+        "min_child_weight": 3.8164229665451233,
+        "subsample": 0.9493727900438116,
+        "colsample_bytree": 0.37864282483758027,
+        "lambda": 2.5103263291859697,
+        "alpha": 8.107413321891844,
+        "gamma": 1.2985015671525275
+      },
+      "best_iterations": [
+        1034,
+        936,
+        907,
+        1025,
+        1078
+      ],
+      "tuning_best_cv_auc": 0.7924476246165758,
+      "tuning_trials": 40,
+      "tuning_pruned": 8
+    },
+    "lightgbm_monotone": {
+      "label": "LightGBM monotonic",
+      "n_features": 287,
+      "cv_auc_mean": 0.7915802604223339,
+      "cv_auc_std": 0.002566593080831156,
+      "cv_fold_auc": [
+        0.788011030786142,
+        0.7902995632260224,
+        0.7914605477342058,
+        0.7958249701079192,
+        0.7923051902573803
+      ],
+      "oof_auc": 0.7915539507311568,
+      "calibration_brier_cv": {
+        "uncalibrated": 0.06570918930494292,
+        "isotonic": 0.06566788900437308,
+        "platt": 0.06568751071384925
+      },
+      "calibration_method": "isotonic",
+      "params": {
+        "objective": "binary",
+        "metric": "auc",
+        "verbosity": -1,
+        "seed": 42,
+        "num_threads": 8,
+        "deterministic": true,
+        "force_col_wise": true,
+        "bagging_freq": 1,
+        "learning_rate": 0.0330717242009232,
+        "num_leaves": 75,
+        "max_depth": 5,
+        "min_child_samples": 272,
+        "feature_fraction": 0.215807772641542,
+        "bagging_fraction": 0.9805385068460479,
+        "lambda_l1": 4.676904008473196,
+        "lambda_l2": 0.05750264578688534,
+        "min_split_gain": 0.65741327578762,
+        "cat_smooth": 5.550276857734454,
+        "monotone_constraints_method": "advanced"
+      },
+      "constraints": {
+        "EXT_SOURCE_1": -1,
+        "EXT_SOURCE_2": -1,
+        "EXT_SOURCE_3": -1,
+        "EXT_SOURCE_MEAN": -1,
+        "EXT_SOURCE_MIN": -1,
+        "EXT_SOURCE_MAX": -1,
+        "EXT_SOURCE_PRODUCT": -1,
+        "INST_LATE_COUNT_3M": 1,
+        "INST_MAX_DPD_3M": 1,
+        "INST_DPD30_COUNT_3M": 1,
+        "INST_LATE_COUNT_6M": 1,
+        "INST_MAX_DPD_6M": 1,
+        "INST_DPD30_COUNT_6M": 1,
+        "INST_LATE_COUNT_12M": 1,
+        "INST_MAX_DPD_12M": 1,
+        "INST_DPD30_COUNT_12M": 1,
+        "INST_LATE_COUNT_24M": 1,
+        "INST_MAX_DPD_24M": 1,
+        "INST_DPD30_COUNT_24M": 1,
+        "INST_LATE_COUNT_ALL": 1,
+        "INST_MAX_DPD_ALL": 1,
+        "INST_DPD30_COUNT_ALL": 1,
+        "PREV_REFUSED_COUNT": 1,
+        "POS_MAX_DPD": 1,
+        "POS_MAX_DPD_DEF": 1,
+        "POS_MAX_DPD_12M": 1,
+        "CC_MAX_DPD": 1,
+        "CC_MAX_DPD_DEF": 1,
+        "CC_MAX_DPD_12M": 1
+      },
+      "best_iterations": [
+        1314,
+        1658,
+        1363,
+        1219,
+        1765
+      ]
+    }
+  },
+  "monotone_cv_auc_cost": 0.0009486186357867687,
+  "best_tree_model": "lightgbm",
+  "best_lightgbm": "lightgbm",
+  "selection_basis": "mean 5-fold CV AUC on the training split",
+  "timings_seconds": {
+    "legacy": 3.244795799255371,
+    "scorecard": 119.17067313194275,
+    "lightgbm": 5816.228828191757,
+    "xgboost": 17802.567598104477,
+    "lightgbm_monotone": 183.1228380203247,
+    "imbalance": 280.0175139904022
+  },
+  "tree_models": [
+    "lightgbm",
+    "xgboost",
+    "lightgbm_monotone"
+  ]
+}
