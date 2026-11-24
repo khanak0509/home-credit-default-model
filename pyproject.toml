@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credit-risk-lab"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: needs downloaded data and trained artifacts"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore::PendingDeprecationWarning"]
+
+[tool.ruff]
+line-length = 160
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

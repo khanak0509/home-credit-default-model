@@ -1,0 +1,154 @@
+seed: 42
+
+paths:
+  raw: data/raw
+  staged: data/staged
+  processed: data/processed
+  models: models
+  reports: reports
+  data_reports: reports
+  figures: reports/figures
+  sql: sql
+
+duckdb:
+  memory_limit: 8GB
+  threads: 8
+  temp_directory: data/processed/duckdb_tmp
+
+download:
+  competition: home-credit-default-risk
+  mirror_dataset: megancrenshaw/home-credit-default-risk
+
+tables:
+  application_train: application_train.csv
+  bureau: bureau.csv
+  bureau_balance: bureau_balance.csv
+  installments_payments: installments_payments.csv
+  previous_application: previous_application.csv
+  pos_cash_balance: POS_CASH_balance.csv
+  credit_card_balance: credit_card_balance.csv
+
+quality:
+  near_constant_share: 0.99
+  iqr_multiplier: 1.5
+  days_employed_sentinel: 365243
+  gender_unknown_value: XNA
+
+split:
+  holdout_share: 0.2
+  n_folds: 5
+
+leakage_audit:
+  auc_flag_threshold: 0.75
+  top_n: 15
+
+legacy_features:
+  - AMT_INCOME_TOTAL
+  - AMT_CREDIT
+  - AMT_ANNUITY
+  - AMT_GOODS_PRICE
+  - DAYS_BIRTH
+  - DAYS_EMPLOYED
+  - CNT_CHILDREN
+  - REGION_RATING_CLIENT
+  - EXT_SOURCE_1
+  - EXT_SOURCE_2
+  - EXT_SOURCE_3
+
+external_score_features:
+  - EXT_SOURCE_1
+  - EXT_SOURCE_2
+  - EXT_SOURCE_3
+  - EXT_SOURCE_MEAN
+  - EXT_SOURCE_MIN
+  - EXT_SOURCE_MAX
+  - EXT_SOURCE_STD
+  - EXT_SOURCE_PRODUCT
+
+scorecard:
+  n_prebins: 20
+  min_bin_share: 0.05
+  iv_threshold: 0.02
+  max_features: 40
+  correlation_threshold: 0.8
+  c_grid: [0.01, 0.1, 1.0]
+  base_score: 600
+  base_odds: 50
+  points_to_double_odds: 20
+
+tuning:
+  n_trials: 40
+  max_boost_rounds: 4000
+  early_stopping_rounds: 150
+  n_jobs: 8
+
+monotone:
+  decreasing_risk:
+    - EXT_SOURCE_1
+    - EXT_SOURCE_2
+    - EXT_SOURCE_3
+    - EXT_SOURCE_MEAN
+    - EXT_SOURCE_MIN
+    - EXT_SOURCE_MAX
+    - EXT_SOURCE_PRODUCT
+  increasing_risk_patterns:
+    - "^INST_LATE_COUNT_"
+    - "^INST_MAX_DPD_"
+    - "^INST_DPD30_COUNT_"
+    - "^POS_MAX_DPD"
+    - "^CC_MAX_DPD"
+    - "^PREV_REFUSED_COUNT$"
+
+ablation_order: [application, bureau, bureau_balance, previous_application, installments, pos_cash, credit_card]
+
+calibration:
+  methods: [isotonic, platt]
+
+evaluation:
+  n_bootstrap: 1000
+  target_bad_rates: [0.03, 0.05, 0.08]
+  ece_bins: 10
+  cost:
+    margin_per_good_loan: 0.10
+    loss_given_default: [0.30, 0.60, 0.90]
+
+explain:
+  shap_sample_size: 5000
+  dependence_top_n: 3
+  permutation_sample_size: 10000
+  permutation_repeats: 3
+  psi_top_n: 20
+  psi_bins: 10
+  psi_thresholds: [0.1, 0.25]
+  disagreement_rank_gap: 10
+
+fairness:
+  operating_bad_rate: 0.05
+  age_bands: [0, 30, 40, 50, 60, 120]
+
+scoring:
+  reason_codes: 5
+  risk_bands:
+    - [A, 0.00, 0.02]
+    - [B, 0.02, 0.04]
+    - [C, 0.04, 0.08]
+    - [D, 0.08, 0.15]
+    - [E, 0.15, 0.30]
+    - [F, 0.30, 1.01]
+
+profiles:
+  quick:
+    paths:
+      models: build/quick/models
+      reports: build/quick/reports
+      figures: build/quick/reports/figures
+    tuning:
+      n_trials: 4
+      max_boost_rounds: 800
+      early_stopping_rounds: 50
+    evaluation:
+      n_bootstrap: 200
+    explain:
+      shap_sample_size: 1000
+      permutation_sample_size: 3000
+      permutation_repeats: 1
